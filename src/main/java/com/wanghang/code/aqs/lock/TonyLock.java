@@ -1,6 +1,6 @@
 package com.wanghang.code.aqs.lock;
 
-import com.study.lock.aqs.NeteaseAqs;
+import com.wanghang.code.aqs.NeteaseAqs;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
