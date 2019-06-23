@@ -23,11 +23,9 @@ public class StrategyFactory {
 	public StrategyFactory(Service service) {
         this.service = service;
     }
-    
-    
-	
+
     public void eate(String name) {
-    	service.eat(name);
+	    service.eat(name);
     }
     
     

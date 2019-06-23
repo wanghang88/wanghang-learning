@@ -22,7 +22,7 @@ public class Result {
         this.info = info;
    }
     
-    public boolean isRatify() {
+   public boolean isRatify() {
         return isRatify;
    }
 
