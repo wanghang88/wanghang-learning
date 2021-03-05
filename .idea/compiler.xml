@@ -9,8 +9,8 @@
         <module name="wanghang-learning" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="wanghang-learning" target="1.5" />
+    <bytecodeTargetLevel target="8">
+      <module name="wanghang-learning" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

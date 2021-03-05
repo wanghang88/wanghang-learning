@@ -9,6 +9,19 @@ import java.util.List;
  *算法刷题：
  *https://github.com/guang19/framework-learning
  *
+ *
+ * 刷阳哥的java多线程
+ * https://gitee.com/moxi159753/LearningNotes/tree/master/%E6%A0%A1%E6%8B%9B%E9%9D%A2%E8%AF%95/JUC
+ *
+ *
+ *
+ * 刷算法：
+ * https://labuladong.gitee.io/algo/
+ *
+ *
+ *
+ *
+ *
  */
 public class SelectionSort {
 

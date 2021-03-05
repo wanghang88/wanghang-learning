@@ -1,4 +1,4 @@
-package com.wanghang.study.sort;
+package com.wanghang.code.sort;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
