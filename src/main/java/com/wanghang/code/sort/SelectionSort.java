@@ -10,11 +10,11 @@ import java.util.List;
  *https://github.com/guang19/framework-learning
  *
  * 刷算法：
- * https://labuladong.gitee.io/algo/
+ *https://labuladong.gitee.io/algo/
  *
  *
  * 刷设计模式
- * https://github.com/wanghang88/core-spring-patterns
+ *https://github.com/wanghang88/core-spring-patterns
  *
  */
 public class SelectionSort {
