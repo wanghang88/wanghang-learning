@@ -29,7 +29,8 @@ import java.util.concurrent.TimeUnit;
  *      Windows：取决于虚拟内存的大小
  *
  *  -Xmn:设置青年代的大小
- *  -XX:MatespaceSize= 设置元控件的大小
+ *  -XX:MatespaceSize=    设置初始的元空间的大小，达到该值就会触发垃圾收集进行类型卸载，同时GC会对该值进行调整
+ *  -XX:MaxMetaspaceSize= 设置初始的元空间的最大值,默认是没有限制的
  *
  *
  *
@@ -62,6 +63,34 @@ import java.util.concurrent.TimeUnit;
  *
  * FullGC的日志：
  *[Full GC (Allocation Failure) [PSYoungGen: 0K->0K(2560K)] [ParOldGen: 648K->630K(7168K)] 648K->630K(9728K), [Metaspace: 3467K->3467K(1056768K)], 0.0058502 secs] [Times: user=0.00 sys=0.00, real=0.01 secs]
+ *
+ *
+ * 5):JVM 触发YGC(Minor GC)和FullGc的条件:
+ *         新生代中的对象朝生夕死，所以 Minor GC 非常频繁，回收速度也比较快,只回收年轻代中的Eden区
+ *         指发生在老年代的GC，速度一般比 Minor GC 慢十倍以上。Full GC 会 Stop-The-World,收集整个堆，包括新生代，老年代，永久代
+ *
+ *
+ *  a)Minor GC的触发条件,
+ *                 大多数情况下，对象直接在年轻代中的Eden区进行分配，如果Eden区域没有足够的空间，那么就会触发YGC(Minor GC);
+ *  b)进入老年代的途径:
+ *                 1)经过多次YGC后，如果存活对象的年龄达到了设定阈值，则会晋升到老年代中.
+ *                 2)大对象：由-XX:PretenureSizeThreshold启动参数控制，若对象大小大于此值，就会绕过新生代, 直接在老年代中分配.
+ *  c)触发FullGc的条件：
+ *                 1)老年代的内存使用率达到了一定阈值（可通过参数调整），直接触发FGC;
+ *                 2)Metaspace（元空间）在空间不足时会进行扩容，当扩容到了-XX:MetaspaceSize 参数的指定值时，也会触发FGC;
+ *                 3)System.gc() 或者Runtime.gc() 被显式调用时，触发FGC;
+ *                 4)空间分配担保,在YGC之前，会先检查老年代最大可用的连续空间是否大于新生代所有对象的总空间
+ *                              小于，说明YGC是不安全的,则会查看参数 HandlePromotionFailure 是否被设置成了允许担保失败，如果不允许则直接触发Full GC
+ *                              如果允许，那么会进一步检查老年代最大可用的连续空间是否大于历次晋升到老年代对象的平均大小，如果小于也会触发 Full GC
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  *
  *
  *
