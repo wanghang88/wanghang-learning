@@ -35,15 +35,33 @@ import java.util.concurrent.TimeUnit;
  *
  *
  * 3)查看JVM的默认参数：
+ * 3.1)
  *-XX:+PrintFlagsInitial  设置这个为启动参数的化,在JVM启动的时候就会将初始化的参数打印出来;
  *-XX:+PrintFlagsFinal    设置这个为启动参数，会在JVM启动的时候将修改过后的参数打印出来
  * java -XX:+PrintFlagsInitial,通过命令查看JVM初始化参数的启动参数;
  * java -XX:+PrintFlagsFinal,  通过命令查看JVM修改过后的参数值；
  *
+ *3.2)
  * -XX:+PrintCommandLineFlags  设置这个打印出JVM的默认的简单初始化参数
  *
+ *3.3)
  * 例如：设置-XX:+PrintCommandLineFlags之后，就会将JVM简单的初始化参数
  *-XX:+PrintGCDetails -XX:InitialHeapSize=100m -XX:MaxHeapSize=100m -XX:+UseParallelGC
+ *
+ *3.4)
+ *表示JVM出现OOM时是否打印dump文件,并且可以指定dump文件的路径：
+ * -XX:+HeapDumpOnOutOfMemoryError
+ * -XX:HeapDumpPath=${目录}，参数表示生成dump文件的路径，也可以指定文件名称，例如：-XX:HeapDumpPath=${目录}/java_heapdump.hprof，
+ *                         如果不指定文件名，默认为：java_<pid>_<date>_<time>_heapDump.hprof
+ *
+ *3.5)
+ *java的内存由直接内存和JVM内存组成：
+ * java的直接内存由-XX:MaxDirectMemorySize来指定,如果不指定的话,则默认为与Java堆的最大值
+ *
+ *
+ *
+ *
+ *
  *
  *
  * 4)设置JVM虚拟机参数并查看GC的日志：
@@ -102,8 +120,6 @@ public class HelloGC {
        // getGCMemory();
        // TimeUnit.SECONDS.sleep(Integer.MAX_VALUE);
         viewGCLog();
-
-
     }
 
     public static void getGCMemory(){

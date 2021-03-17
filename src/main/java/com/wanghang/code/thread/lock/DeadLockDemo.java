@@ -26,6 +26,10 @@ import java.util.concurrent.TimeUnit;
  *思索产生的问题分析：
  *   jps -l  查看运行的程序
  *   jstack pid查看线程的堆栈信息
+ *
+ *   top(命令找到占用资源高的进程)
+ *   top -H -p 12798(查看这个占资源的线程)
+ *   jstack pid| grep 31ff A -10 B -10 (查看这个占资源线程的堆栈信息)
  */
 
 class HoldLockThread implements Runnable{
