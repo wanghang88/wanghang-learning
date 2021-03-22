@@ -3,6 +3,9 @@ package com.wanghang.code.innerClass;
 
 /**
  *1)内部类：
+ *      https://blog.csdn.net/weixin_42762133/article/details/82890555
+ *
+ *
  *       将一个类的定义放在里另一个类的内部，这就是内部类，广义上我们将内部类分为四种：成员内部类、静态内部类、局部（方法）内部类、匿名内部类。
  *
  *2)为啥要有内部类？
