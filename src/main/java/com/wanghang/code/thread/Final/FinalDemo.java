@@ -5,6 +5,10 @@ import com.wanghang.code.thread.threadpool.cas1.Job;
 import lombok.Data;
 
 /**
+ *
+ *final域的修饰可以参考：
+ * https://yuanyu.blog.csdn.net/article/details/104091625
+ *
  *java中的fianl关键字：
  * 1)final修饰方法的参数: 基本变量和引用变量？
  *    final参数,当函数参数为final类型时，你可以读取使用该参数，但是无法改变该参数的值,

@@ -4,8 +4,12 @@ package com.wanghang.code.thread.lock;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 相关代码可以参考这两篇：
  *https://gitee.com/moxi159753/LearningNotes/tree/master/%E6%A0%A1%E6%8B%9B%E9%9D%A2%E8%AF%95/JUC/11_%E6%AD%BB%E9%94%81%E7%BC%96%E7%A0%81%E5%8F%8A%E5%BF%AB%E9%80%9F%E5%AE%9A%E4%BD%8D
- *死锁：
+ *
+ * https://yuanyu.blog.csdn.net/article/details/103978157
+ *
+ * 死锁：
  *   两个或这两个以上的进程在执行过程中,因争夺资源而造成一种互相等待的现象,若无外力干涉那他们都将无法推进下去.
  *
  *产生的原因：
