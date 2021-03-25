@@ -5,6 +5,10 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Semaphore;
 
 /**
+ * 模拟并发的工具类：
+ * 可以参考这篇文章，有代码也有工具的配置:
+ * https://yuanyu.blog.csdn.net/article/details/104156286
+ *
  *基于Semaphore，CountDownLatch以及线程池实现模拟并发请求的case
  *
  * 总请求数是5000，同时执行并发的请求是200
