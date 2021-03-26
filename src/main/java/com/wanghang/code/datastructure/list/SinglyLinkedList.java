@@ -128,7 +128,16 @@ public class SinglyLinkedList<T> {
     }
 
 
-
+    public String toString() {
+        StringBuffer sb = new StringBuffer();
+        Node cur = this.head;
+        while(cur != null){
+            sb.append(cur.t+"=>");
+            cur = cur.next;
+        }
+        sb.append("NULL");
+        return sb.toString();
+    }
 
 
     public static void main(String[] args) {
@@ -140,27 +149,16 @@ public class SinglyLinkedList<T> {
 
 
         //2:往链表的中间插入元素：
-        singlyLinkedList.addTest(singlyLinkedList);
+  //      singlyLinkedList.addTest(singlyLinkedList);
 
 
 
         //3:查询链表中是否有某个元素：
-        singlyLinkedList.containsTest(singlyLinkedList);
+   //     singlyLinkedList.containsTest(singlyLinkedList);
 
 
         //4:删除单向链表的元素测试：
-        singlyLinkedList.removeTest(singlyLinkedList);
-
-
-
-
-
-
-
-
-
-
-
+  //      singlyLinkedList.removeTest(singlyLinkedList);
     }
 
 
