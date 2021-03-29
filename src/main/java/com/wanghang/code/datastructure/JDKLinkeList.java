@@ -15,4 +15,31 @@ public class JDKLinkeList {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //LinkedList 双向链表的数据结构
+    private static class Node<E> {
+        E item;
+        JDKLinkeList.Node<E> next;
+        JDKLinkeList.Node<E> prev;
+
+        Node(JDKLinkeList.Node<E> prev, E element, JDKLinkeList.Node<E> next) {
+            this.item = element;
+            this.next = next;
+            this.prev = prev;
+        }
+    }
 }

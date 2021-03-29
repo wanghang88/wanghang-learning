@@ -111,7 +111,7 @@ public class SinglyLinkedList<T> {
 
 
 
-    static class Node <T> {
+   private static class Node <T> {
         //数据域
         public T t;
         //指针域
