@@ -104,7 +104,8 @@ import java.util.concurrent.TimeUnit;
  *
  *
  *
- *
+ * 6)关于查看GC日志：
+ *               https://blog.csdn.net/topdeveloperr/article/details/88874957
  *
  *
  *
