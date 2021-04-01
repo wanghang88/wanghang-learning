@@ -23,8 +23,8 @@ package com.wanghang.code.thread.threadlocal;
  *
  *
  *
- *3)ThreadLocal的子线程和主线程交互共享变量：
- * https://www.jianshu.com/p/6fc3bba12f38
+ *3)ThreadLocal的子线程和主线程交互共享变量(子线程和主线程的ThreadLocal进行交互)：
+ * https://blog.csdn.net/liubenlong007/article/details/107049375
  *
  *
  *
