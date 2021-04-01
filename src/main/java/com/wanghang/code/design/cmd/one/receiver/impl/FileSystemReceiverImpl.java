@@ -1,6 +1,8 @@
-package com.wanghang.code.design.cmd.one;
+package com.wanghang.code.design.cmd.one.receiver.impl;
 
-public class FileSystemReceiverImpl implements FileSystemReceiver{
+import com.wanghang.code.design.cmd.one.receiver.FileSystemReceiver;
+
+public class FileSystemReceiverImpl implements FileSystemReceiver {
     @Override
     public void openFile() {
        System.out.println("FileSystemReceiver 的实现类FileSystemReceiverImpl 实现openFile()方法");

@@ -1,8 +1,11 @@
-package com.wanghang.code.design.cmd.one;
+package com.wanghang.code.design.cmd.one.command.impl;
 
+
+import com.wanghang.code.design.cmd.one.command.Command;
+import com.wanghang.code.design.cmd.one.receiver.FileSystemReceiver;
 
 //关闭文件的命令
-public class CloseFileCommand implements Command{
+public class CloseFileCommand implements Command {
 
     private FileSystemReceiver fileSystem;
 

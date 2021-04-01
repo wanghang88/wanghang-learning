@@ -1,4 +1,4 @@
-package com.wanghang.code.design.cmd.one;
+package com.wanghang.code.design.cmd.one.receiver;
 
 public interface FileSystemReceiver {
 

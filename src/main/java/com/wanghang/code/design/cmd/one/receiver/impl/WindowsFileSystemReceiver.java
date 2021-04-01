@@ -1,8 +1,10 @@
-package com.wanghang.code.design.cmd.one;
+package com.wanghang.code.design.cmd.one.receiver.impl;
 
+
+import com.wanghang.code.design.cmd.one.receiver.FileSystemReceiver;
 
 //window系统操作文件的实现
-public class WindowsFileSystemReceiver implements FileSystemReceiver{
+public class WindowsFileSystemReceiver implements FileSystemReceiver {
 
     @Override
     public void openFile() {

@@ -1,5 +1,8 @@
-package com.wanghang.code.design.cmd;
+package com.wanghang.code.design.cmd.two.cmd;
 
+
+import com.wanghang.code.design.cmd.two.cmd.Command;
+import com.wanghang.code.design.cmd.two.receiver.Receiver;
 
 /**
  * 具体的执行命令的角色

@@ -1,5 +1,7 @@
-package com.wanghang.code.design.cmd.one;
+package com.wanghang.code.design.cmd.one.invoker;
 
+
+import com.wanghang.code.design.cmd.one.command.Command;
 
 //命令的具体执行者
 public class FileInvoker {

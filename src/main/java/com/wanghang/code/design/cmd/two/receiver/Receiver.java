@@ -1,4 +1,4 @@
-package com.wanghang.code.design.cmd;
+package com.wanghang.code.design.cmd.two.receiver;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.wanghang.code.design.cmd.one;
+package com.wanghang.code.design.cmd.one.command;
 
 
 //定义命令需要执行的代码

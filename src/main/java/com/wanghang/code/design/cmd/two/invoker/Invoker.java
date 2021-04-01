@@ -1,6 +1,7 @@
-package com.wanghang.code.design.cmd;
+package com.wanghang.code.design.cmd.two.invoker;
 
 
+import com.wanghang.code.design.cmd.two.cmd.Command;
 
 public class Invoker {
 
