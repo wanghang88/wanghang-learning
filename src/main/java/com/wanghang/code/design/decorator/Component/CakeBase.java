@@ -1,6 +1,7 @@
-package com.wanghang.code.design.decorator;
+package com.wanghang.code.design.decorator.Component;
 
-// Concrete Component
+
+
 public class CakeBase implements BakeryComponent {
 
     private String name = "Cake Base";

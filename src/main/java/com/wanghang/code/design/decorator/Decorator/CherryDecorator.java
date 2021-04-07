@@ -1,6 +1,6 @@
 package com.wanghang.code.design.decorator.Decorator;
 
-import com.wanghang.code.design.decorator.BakeryComponent;
+import com.wanghang.code.design.decorator.Component.BakeryComponent;
 
 //Concrete Decorator
 public class CherryDecorator extends Decorator {
