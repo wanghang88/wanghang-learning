@@ -23,13 +23,6 @@ public class StreamDemo {
                 new Employee(104, "赵六", 8, 7777.77, Employee.Status.FREE),
                 new Employee(105, "田七", 38, 5555.55, Employee.Status.BUSY)
         );
-
-
-
-
-
-
-
     }
 }
 
