@@ -13,7 +13,11 @@ import java.util.Map;
 /**
  *参考博文：
  *      https://mp.weixin.qq.com/s/oQrxkzNvQNwB0rc0Vg1vQg
- *2)不过相比较LinkedHashMap还是更容易理解,如果复写removeEldestEntry会更简单
+ *1)不过相比较LinkedHashMap还是更容易理解,如果复写removeEldestEntry会更简单
+ *
+ *
+ *2)有时间需要整理下,关于LinkedHashMap与HashMap的区别：
+ *
  *
  */
 public class LRU {
