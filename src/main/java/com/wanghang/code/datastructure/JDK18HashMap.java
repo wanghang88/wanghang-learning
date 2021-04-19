@@ -3,6 +3,20 @@ package com.wanghang.code.datastructure;
 
 import java.util.HashMap;
 
+
+/**
+ *HashMap的实现原理参考博文：
+ * https://www.cnblogs.com/jajian/p/13965678.html   （码辣架构）
+ *
+ * bugstack虫洞栈：
+ https://bugstack.cn/interview/2020/08/13/%E9%9D%A2%E7%BB%8F%E6%89%8B%E5%86%8C-%E7%AC%AC4%E7%AF%87-HashMap%E6%95%B0%E6%8D%AE%E6%8F%92%E5%85%A5-%E6%9F%A5%E6%89%BE-%E5%88%A0%E9%99%A4-%E9%81%8D%E5%8E%86-%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.html
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 public class JDK18HashMap {
 
     public static void main(String[] args) {
