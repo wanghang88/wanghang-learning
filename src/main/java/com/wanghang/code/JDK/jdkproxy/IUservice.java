@@ -1,4 +1,4 @@
-package com.wanghang.code.JDK.proxy;
+package com.wanghang.code.JDK.jdkproxy;
 
 
 //需要动态代理的接口

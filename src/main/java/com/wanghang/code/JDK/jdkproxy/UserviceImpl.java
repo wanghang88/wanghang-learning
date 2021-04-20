@@ -1,5 +1,7 @@
-package com.wanghang.code.JDK.proxy;
+package com.wanghang.code.JDK.jdkproxy;
 
+
+import com.wanghang.code.JDK.jdkproxy.IUservice;
 
 //需要代理的实际对象
 public class UserviceImpl implements IUservice {

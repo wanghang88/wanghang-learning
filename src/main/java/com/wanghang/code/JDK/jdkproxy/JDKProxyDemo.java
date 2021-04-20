@@ -1,4 +1,8 @@
-package com.wanghang.code.JDK.proxy;
+package com.wanghang.code.JDK.jdkproxy;
+
+import com.wanghang.code.JDK.jdkproxy.IUservice;
+import com.wanghang.code.JDK.jdkproxy.UserviceImpl;
+import com.wanghang.code.JDK.jdkproxy.one.InvocationHandlerImpl;
 
 /**
  *基于JDK实现动态代理：
@@ -33,6 +37,11 @@ package com.wanghang.code.JDK.proxy;
  *4:关于spring如何使用动态代理：
  *    4.1)可以任意的控制任意对象的执行过程，这个对象的执行过程可以由客户端灵活的指定,
  *
+ *
+ *
+ *
+ *5:java动态代理参考实现:
+ *                     https://github.com/183619962/java-proxy
  *
  */
 public class JDKProxyDemo {
