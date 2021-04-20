@@ -17,6 +17,22 @@ import java.util.HashMap;
  *
  *
  */
+
+/**
+ *HashMap的实现原理:
+ * 博文:
+  苦味代码，初始化，数据寻址-hash方法，数据存储-put方法,扩容-resize方法，只要理解了这四个点的原理和调用时机，也就理解了整个HashMap的设计
+  https://mp.weixin.qq.com/s/UOr9BOWrv67d8l1VQxqUkA
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 public class JDK18HashMap {
 
     public static void main(String[] args) {
