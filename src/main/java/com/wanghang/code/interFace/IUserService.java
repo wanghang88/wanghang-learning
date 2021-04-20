@@ -1,7 +1,7 @@
 package com.wanghang.code.interFace;
 
-public class UserServiceImpl{
+public class IUserService{
 
 
-
+   
 }
