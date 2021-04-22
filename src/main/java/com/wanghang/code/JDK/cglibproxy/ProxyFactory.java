@@ -62,13 +62,13 @@ public class ProxyFactory implements MethodInterceptor {
         try {
             // 执行真实的目标对象的方法
             returnObj = method.invoke(target, args);
+
             System.out.println("代码执行后增强！");
         } catch (Exception e) {
             System.out.println("代码执行异常！");
             // 由于这里只是代理，所以对异常处理完之后，还需要将其再抛出去
             throw e;
         }
-        System.out.println("代码执行完！");
         return returnObj;
     }
 }
