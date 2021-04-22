@@ -1,5 +1,8 @@
-package com.wanghang.code.JDK.jdkproxy;
+package com.wanghang.code.JDK;
 
+
+import com.wanghang.code.JDK.cglibproxy.ProxyFactory;
+import com.wanghang.code.JDK.cglibproxy.RealSubject;
 import com.wanghang.code.JDK.jdkproxy.IUservice;
 import com.wanghang.code.JDK.jdkproxy.UserviceImpl;
 import com.wanghang.code.JDK.jdkproxy.one.InvocationHandlerImpl;
@@ -39,13 +42,36 @@ import com.wanghang.code.JDK.jdkproxy.one.InvocationHandlerImpl;
  *
  *
  *
+ *5:关于实现CGLIB的代理:
+ *      在实际开发过程中，往往也会存在一个单独的类，他并没有实现任何接口，这个时候，我们就可以使用目标对象的子类（抽象类）来实现代理；这种方式我们称之为Cglib代理；
+ *      Cglib又称之为子类代理、抽象类代理；它是在内存中构建一个子类从而实现对目标对象功能的扩展；
+ *      Cglib是一个强大的高性能的代码生成包，底层是通过字节码处理器ASM来转换字节码并生成新的类
+ *      Cglib同样可也可以实现基于接口的动态代理
  *
- *5:java动态代理参考实现:
+ *6:java动态代理参考实现:
  *                     https://github.com/183619962/java-proxy
  *
+ *
  */
-public class JDKProxyDemo {
+public class ProxyDemo {
+
     public static void main(String[] args) {
+        ProxyDemo proxyDemo=new ProxyDemo();
+
+
+        //1:JDK的动态代理;
+    //    proxyDemo.JDKProxy();
+
+
+        //2:cglibd的代理(普通类RealSubject)：
+  //      proxyDemo.cglibProxy1();
+
+
+        //3:cglib代理接口类IUservice
+        proxyDemo.cglibProxy2();
+    }
+
+    private  void JDKProxy() {
         IUservice uservice=new UserviceImpl();
 
         //1:生成IUservice的代理对象:
@@ -59,5 +85,30 @@ public class JDKProxyDemo {
         //3:代理对象执行再见方法演示:
         String sayGoodByeReslut = proxy.SayGoodBye();
         System.out.println("代理对象执行SayGoodBye方法的结果:"+sayGoodByeReslut);
+    }
+
+
+    private void cglibProxy1(){
+        //1:目标对象：
+        RealSubject realSubject = new RealSubject();
+
+        //2:生成代理对象：
+        RealSubject realSubjectProxy = (RealSubject) new ProxyFactory(realSubject).getProxyInstrance();
+
+        //3:调用方法：
+        realSubjectProxy.request();
+    }
+
+
+    //todo：cglib实现接口的代理有问题？
+    private void cglibProxy2(){
+        //1:目标对象
+        IUservice uservice=new UserviceImpl();
+
+        //2:生成接口的代理对象
+        IUservice userviceProxy = (IUservice) new ProxyFactory(uservice).getProxyInstrance1();
+
+        //3:调用方法：
+        userviceProxy.SayGoodBye();
     }
 }
