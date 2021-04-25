@@ -1,4 +1,4 @@
-package com.wanghang.code.JDK.proxy;
+package com.wanghang.code.JDK.jdkproxy.one;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
