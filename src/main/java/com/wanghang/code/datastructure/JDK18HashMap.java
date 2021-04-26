@@ -15,7 +15,12 @@ import java.util.HashMap;
    苦味代码:初始化，数据寻址-hash方法，数据存储-put方法,扩容-resize方法，只要理解了这四个点的原理和调用时机，也就理解了整个HashMap的设计
    https://mp.weixin.qq.com/s/UOr9BOWrv67d8l1VQxqUkA
  *
- *
+
+  b)JDK1.7HashMap的原理分析:
+  https://blog.csdn.net/mu_wind/article/details/94450556
+
+
+
  *
  */
 
