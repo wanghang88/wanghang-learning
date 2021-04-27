@@ -15,7 +15,7 @@ public class InputStreamReaderAndOutputStreamWriter {
 
 
     public static void main(String[] args) throws IOException {
-        File file = new File("D:/test.txt");
+        File file = new File("D:/wanghang/test.txt");
 
         //1:通过OutputStreamWriter写入文件
         write(file);

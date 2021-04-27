@@ -16,7 +16,7 @@ public class FileInputStreamAndfileOutputStreamDemo {
     public static void main(String[] args) throws IOException {
         FileInputStreamAndfileOutputStreamDemo fileInputStreamAndfileOutputStreamDemo=new FileInputStreamAndfileOutputStreamDemo();
 
-        File file = new File("D:/test.txt");
+        File file = new File("D:/wanghang/test.txt");
 
         //1:在d盘写入test.txt文件,
         fileInputStreamAndfileOutputStreamDemo.write(file);

@@ -17,7 +17,7 @@ public class BufferedInputStreamAndBufferedOutputStreamDemo {
 
 
     public static void main(String[] args) throws IOException {
-        File file = new File("D:/test.txt");
+        File file = new File("D:/wanghang/test.txt");
         //1:通过BufferedOutputStream写入文件
         write(file);
 
