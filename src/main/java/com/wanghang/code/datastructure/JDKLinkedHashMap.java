@@ -3,6 +3,17 @@ package com.wanghang.code.datastructure;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+
+/**
+ *
+ * LinkedHashMap源码解析：
+ * 参考博文：
+ *        https://www.pianshen.com/article/660225547/
+ *
+ *
+ *
+ */
+
 public class JDKLinkedHashMap {
 
 
