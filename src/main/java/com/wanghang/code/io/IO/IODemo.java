@@ -51,15 +51,15 @@ public class IODemo {
     public static void main(String[] args) throws IOException {
 
         //1:字节流写入和缓冲字节流写入的效率对比:(BufferedOutputStream效率要低 Todo )
-        OutputStream_BufferedOutputStream_Compare_write();
+     //   OutputStream_BufferedOutputStream_Compare_write();
 
 
-        //2:字节流读写和缓区字节流读写效率对比:
+        //2:字节流读写和缓区字节流读写效率对比(效率:缓冲字节流效率明显要高于普通字节流)
         InputStreamAndOutputStream_BufferedInputStreamAndBufferedOutputStream_read_write();
 
 
-        //3:字符流和缓冲字符流的效率对比
-        FileReaderAndFileWriter_BufferedReaderAndBufferedWriter_read_write();
+        //3:字符流和缓冲字符流的效率对比(效率:普通字符流数组读写得效率>缓冲字符流>普通字符流得读写)
+       // FileReaderAndFileWriter_BufferedReaderAndBufferedWriter_read_write();
         
     }
 
@@ -69,7 +69,7 @@ public class IODemo {
         File file = new File("D:/wanghang/OutputStream_BufferedOutputStream_Compare_write.txt");
         StringBuilder sb = new StringBuilder();
 
-        for (int i = 0; i < 3000000; i++) {
+        for (int i = 0; i < 3000; i++) {
             sb.append("abcdefghigklmnopqrstuvwsyz");
         }
         byte[] bytes = sb.toString().getBytes();
@@ -94,7 +94,7 @@ public class IODemo {
 
 
     private static void InputStreamAndOutputStream_BufferedInputStreamAndBufferedOutputStream_read_write() throws IOException {
-        File data = new File("D:/wanghang/data.zip");
+        File data = new File("D:/wanghang/src.zip");
         File fileA = new File("D:/wanghang/a.zip");
         File fileB = new File("D:/wanghang/b.zip");
 
@@ -139,7 +139,7 @@ public class IODemo {
     private static void FileReaderAndFileWriter_BufferedReaderAndBufferedWriter_read_write() throws IOException {
         //1:准备数据(D:/wangahng/data.txt)：
         dataReady();
-        File data = new File("D:/wangahng/data.txt");
+        File data = new File("D:/wanghang/data.txt");
 
         File fileA = new File("D:/wanghang/a.txt");
         File fileB = new File("D:/wanghang/b.txt");
@@ -192,10 +192,11 @@ public class IODemo {
 
     public static void dataReady() throws IOException {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 600000; i++) {
+        for (int i = 0; i < 10000; i++) {
             sb.append("abcdefghijklmnopqrstuvwxyz");
         }
-        OutputStream os = new FileOutputStream(new File("D:/wanghang/data.txt"));
+        File file = new File("D:/wanghang/data.txt");
+        OutputStream os = new FileOutputStream(file);
         os.write(sb.toString().getBytes());
         os.close();
         System.out.println("完毕");
