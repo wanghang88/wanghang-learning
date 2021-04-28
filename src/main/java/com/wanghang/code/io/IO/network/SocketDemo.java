@@ -9,6 +9,15 @@ package com.wanghang.code.io.IO.network;
  *   ServerSocket用于服务器端，监听客户端连接,可以获取Socket连接，
  *   Socket用于客户端与服务端交互
  *   服务段accept()方法处于阻塞状态，直到有客户端连接，创建一个服务端Socket，与客户端交互.
+ *
+ *
+ *
+ *3)Socket编程参考博文:
+ * https://www.cnblogs.com/yiwangzhibujian/p/7107785.html#q2.1
+ *
+ *
+ *
+ *
  */
 public class SocketDemo {
 }
