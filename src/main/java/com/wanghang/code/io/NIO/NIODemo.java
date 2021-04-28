@@ -65,6 +65,7 @@ import java.nio.channels.FileChannel;
 public class NIODemo {
 
 
+    //可以发现效率最高得是:普通字符数组读写->NIO读写->缓冲字符流读写->普通字符流读写
     public static void main(String[] args) throws IOException {
         //准备数据文件：
         dataReady();
@@ -219,7 +220,7 @@ public class NIODemo {
     //准备数据：D:/wanghang/data.txt
     public static void dataReady() throws IOException {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 10000000; i++) {
             sb.append("abcdefghijklmnopqrstuvwxyz");
         }
         File file = new File("D:/wanghang/data.txt");
