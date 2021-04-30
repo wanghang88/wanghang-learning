@@ -25,7 +25,7 @@ import java.util.Set;
  *
  */
 public class NIOServer {
-    private static int DEFAULT_PORT = 8083;
+    private static int DEFAULT_PORT = 12345;
     private static ServerHandle serverHandle;
 
     public static void main(String[] args) {
@@ -90,7 +90,7 @@ public class NIOServer {
             while (started){
                 try {
                     //无论是否有读写事件发生，selector每隔1s被唤醒一次
-                    selector.select();                                        //selector.select()与 selector.select(1000)的区别;
+                    selector.select(1000);                                        //selector.select()与 selector.select(1000)的区别;
                     //阻塞,只有当至少一个注册的事件发生的时候才会继续.
                     Set<SelectionKey> keys = selector.selectedKeys();
                     Iterator<SelectionKey> it = keys.iterator();

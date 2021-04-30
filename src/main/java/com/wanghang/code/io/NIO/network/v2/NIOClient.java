@@ -11,7 +11,7 @@ import java.util.Set;
 
 public class NIOClient {
     private static String DEFAULT_HOST = "127.0.0.1";
-    private static int DEFAULT_PORT = 8083;
+    private static int DEFAULT_PORT = 12345;
     private static ClientHandle clientHandle;
 
 
@@ -90,7 +90,7 @@ public class NIOClient {
             while (started){
                 try {
                     //无论是否有读写事件发生，selector每隔1s被唤醒一次
-                    selector.select();
+                    selector.select(1000);
                     Set<SelectionKey> keys = selector.selectedKeys();
                     Iterator<SelectionKey> it = keys.iterator();
                     SelectionKey key = null;
