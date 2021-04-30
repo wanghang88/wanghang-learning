@@ -2,7 +2,6 @@ package com.wanghang.code.io.NIO.network;
 
 
 import java.io.IOException;
-import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
@@ -19,6 +18,9 @@ import java.util.Set;
  *
  * NIO网络模型参考博文：
  *                 https://www.cnblogs.com/duanxz/p/6759689.html
+ *
+ *                 https://segmentfault.com/a/1190000012316621?utm_source=sf-similar-article    (java NIO的基础白话文,比较好理解，比较推荐)
+ *
  */
 
 
@@ -47,7 +49,7 @@ public class NIOServer {
                selector = Selector.open();
 
                //4:将ServerSocketChannel注册到Reactor线程的多路复用器Selector上，监听Accept事件
-               SelectionKey key = acceptorSvr.register(selector, SelectionKey.OP_ACCEPT);
+                acceptorSvr.register(selector, SelectionKey.OP_ACCEPT);
 
 
            } catch (IOException e) {
