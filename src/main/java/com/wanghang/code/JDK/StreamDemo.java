@@ -2,8 +2,6 @@ package com.wanghang.code.JDK;
 
 
 import com.alibaba.fastjson.JSONObject;
-import com.google.common.collect.Maps;
-import com.sun.tools.internal.ws.wscompile.WsimportOptions;
 import lombok.Data;
 import lombok.ToString;
 
@@ -50,7 +48,7 @@ public class StreamDemo {
          *4:对list的collect(Collector c)收集操作
          * 将流转换为其他形式
          */
-    //    streamDemo.collect();
+     //  streamDemo.collect();
 
 
         /**
@@ -62,18 +60,25 @@ public class StreamDemo {
         /**
          * 6:集合的交集,合集,差集的操作
          */
-        streamDemo.mergerTest();
+    //    streamDemo.mergerTest();
 
 
+        /**
+         *7:集合操作之分组:将List<Object>根据字段key进行分组，得到一个Map<key,List<Object>>的结构
+         */
+    //    streamDemo.aggregation();
 
 
-
-
-
-
-
-
-
+        /**
+         *映射(map/flatMap)
+         * 可以将一个流的元素按照一定的映射规则映射到另一个流中。分为map和flatMap,
+         * map：接收一个函数作为参数，该函数会被应用到每个元素上，并将其映射成一个新的元素.
+         * flatMap：接收一个函数作为参数，将流中的每个值都换成另一个流，然后把所有流连接成一个流.
+         *
+         *
+         *
+         */
+        streamDemo.mapOrFlatMap();
     }
 
 
@@ -226,8 +231,25 @@ public class StreamDemo {
 
     public void collect(){
         List<Employee> employeeList = init();
+        //1.1:collect的joining()操作,   张三李四王五赵六赵六赵六田七
+        String collect1 = employeeList.stream()
+                .map(Employee::getName)
+                .collect(Collectors.joining());
+        System.out.println("collect(Collectors.joining()):"+collect1);
 
-        //1:collect的toList
+        //1.2:collect的joining(CharSequence delimiter)操作2, 张三,李四,王五,赵六,赵六,赵六,田七
+        String collect2 = employeeList.stream()
+                .map(Employee::getName)
+                .collect(Collectors.joining(","));
+        System.out.println("collect(Collectors.joining()):"+collect2);
+
+        //1.3:collect的joining(CharSequence delimiter,CharSequence prefix,CharSequence suffix)操作3, @张三,李四,王五,赵六,赵六,赵六,田七@
+        String collect3= employeeList.stream()
+                .map(Employee::getName)
+                .collect(Collectors.joining(",","@","@"));
+        System.out.println("collect(Collectors.joining()):"+collect3);
+
+        //1.4:collect的toList
         List<String> empNameList = employeeList.stream()
                 .map(Employee::getName)
                 .collect(Collectors.toList());
@@ -315,6 +337,78 @@ public class StreamDemo {
     }
 
 
+    /**
+     * java的聚合操作
+     */
+    public void aggregation(){
+        List<Employee> employeesList = init();
+
+        //1.1:分组:
+        Map<Employee.Status, List<Employee>> map = employeesList.stream()
+                                                 .collect(Collectors.groupingBy(Employee::getStatus));
+        System.out.println("对employeesList分组之后的map为:"+map);
+
+        //1.2:求最值:
+        Optional<Employee> max = employeesList.stream().max(Comparator.comparingDouble(Employee::getSalary));//Comparator.comparingDouble(),根据字段的类型还有,Long,Int等，以及一些其他的api
+        System.out.println("工资最高的人max"+max.get());
+    }
+
+
+    /**
+     *映射(map/flatMap),映射，可以将一个流的元素按照一定的映射规则映射到另一个流中。分为map和flatMap
+     *
+     * map：接收一个函数作为参数，该函数会被应用到每个元素上，并将其映射成一个新的元素,
+     * flatMap：接收一个函数作为参数，将流中的每个值都换成另一个流，然后把所有流连接成一个流.
+     *
+     * map,通过函数，将原来employeesList里的每一个元素的name和salary都更改了(是每一个元素).
+     *
+     *
+     *
+     *
+     */
+    public void mapOrFlatMap(){
+
+        //1.1:英文字符串数组的元素全部改为大写(变成新的List)
+        String[] strArr = { "abcd", "bcdd", "defde", "fTr" };
+        List<String> strList = Arrays.stream(strArr).map(String::toUpperCase).collect(Collectors.toList());
+        System.out.println("strList:"+strList);
+
+        //1.2:整数数组每个元素+3(也是变成新的List)
+        List<Integer> intList = Arrays.asList(1, 3, 5, 7, 9, 11);
+        List<Integer> intListNew = intList.stream().map(x -> x + 3).collect(Collectors.toList());
+        System.out.println("intListNew:"+intListNew);
+
+        List<Employee> employeesList = init3();
+        List<Employee> employeesListNew = employeesList.stream()
+                .map(e -> {
+                    Employee Employee = new Employee(e.getId(), "wanghang", e.getAge(), 239.89, e.getStatus());
+                    return Employee;
+                }).collect(Collectors.toList());
+        System.out.println("一次改动前employeesList"+employeesList);
+        System.out.println("一次改动后employeesListNew"+employeesListNew);
+
+
+        //也是直接更改了原来所有元素的那么值
+        List<Employee> employeesListNew1 = employeesList.stream()
+                .map(e -> {
+                    e.setName("wanghang");
+                    return e;
+                }).collect(Collectors.toList());
+        System.out.println("二次改动前employeesList"+employeesList);
+        System.out.println("employeesListNew1"+employeesListNew1);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     public static List<Employee> init(){
         List<Employee>  emps= Arrays.asList(
                 new Employee(101, "张三", 18, 9999.99, Employee.Status.FREE),
@@ -350,6 +444,15 @@ public class StreamDemo {
                 new Employee(102, "李四", 59, 6666.66, Employee.Status.BUSY),
                 new Employee(103, "王五", 28, 3333.33, Employee.Status.VOCATION),
                 new Employee(103, "无名", 30, 400.90, Employee.Status.VOCATION)
+        );
+        return emps;
+    };
+
+    public static List<Employee> init3(){
+        List<Employee>  emps= Arrays.asList(
+                new Employee(101, "张三", 18, 9999.99, Employee.Status.FREE),
+                new Employee(102, "李四", 59, 6666.66, Employee.Status.BUSY),
+                new Employee(103, "王五", 28, 3333.33, Employee.Status.VOCATION)
         );
         return emps;
     };
