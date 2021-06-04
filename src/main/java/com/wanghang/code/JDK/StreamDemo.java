@@ -381,7 +381,7 @@ public class StreamDemo {
         List<Employee> employeesList = init3();
         List<Employee> employeesListNew = employeesList.stream()
                 .map(e -> {
-                    Employee Employee = new Employee(e.getId(), "wanghang", e.getAge(), 239.89, e.getStatus());
+                    Employee Employee = new Employee(e.getId(), e.getName(), null, null, null);   //e.getId()则表示还是用原来的值
                     return Employee;
                 }).collect(Collectors.toList());
         System.out.println("一次改动前employeesList"+employeesList);
