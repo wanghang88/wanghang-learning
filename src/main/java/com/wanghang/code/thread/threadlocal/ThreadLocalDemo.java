@@ -25,6 +25,14 @@ package com.wanghang.code.thread.threadlocal;
  *
  *3)ThreadLocal的子线程和主线程交互共享变量(子线程和主线程的ThreadLocal进行交互)：
  * https://blog.csdn.net/liubenlong007/article/details/107049375
+ *
+ *
+ * 阿里开源transmittable-thread-local(TTL),ThreadLocal的需求场景页就是TransmittableThreadLocal的潜在需求场景，可以看下ThreadLocal的具体运用
+ * https://github.com/alibaba/transmittable-thread-local
+ *
+ *
+ *
+ *
  */
 
 public class ThreadLocalDemo {

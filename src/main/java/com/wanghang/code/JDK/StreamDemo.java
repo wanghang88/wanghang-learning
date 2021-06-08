@@ -227,8 +227,15 @@ public class StreamDemo {
      *
      *partitioningBy，根据true或false进行分区。 Map<Boolean, List<T>>
      *              Map<Boolean,List<Emp>> vd = list.stream().collect(Collectors.partitioningBy(Employee::getManage));
+     *
+     *
+     *
+     *常见的转换
+     *List<Employee>  employeeList ->List<String> nameList
+     *List<Employee>  employeeList->Map<Integer, Employee> map
+     *List<Interge> list->  List<Employee>  employeeList
+     *
      */
-
     public void collect(){
         List<Employee> employeeList = init();
         //1.1:collect的joining()操作,   张三李四王五赵六赵六赵六田七
@@ -286,6 +293,16 @@ public class StreamDemo {
                 collect(Collectors.toCollection(ArrayList::new));
         System.out.println("collect:"+collect);
         System.out.println("collect test collect  end");
+
+
+       //3.4:将 List<String> list变成List<Employee>
+
+
+        //3.5将字符串已逗号分割,变成List<Long>
+        String str="100,200,300,400,500";
+        String[] strArr = str.split(",");
+        List<Long> collect4 = Arrays.stream(strArr).map(s -> Long.parseLong(s.trim())).collect(Collectors.toList());
+        System.out.println("collect:"+collect);
     }
 
 
