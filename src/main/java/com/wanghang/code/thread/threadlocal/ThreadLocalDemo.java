@@ -1,6 +1,10 @@
 package com.wanghang.code.thread.threadlocal;
 
 
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
 /**
  * ThreadLocal的理解：
  *
@@ -23,7 +27,39 @@ package com.wanghang.code.thread.threadlocal;
  *
  *
  *
- *3)ThreadLocal的子线程和主线程交互共享变量(子线程和主线程的ThreadLocal进行交互)：
+ *3)ThreadLocal产生内存泄漏原因分析:
+ *3.1:
+ * 引用：
+ * Object o = new Object(),这个o，我们可以称之为对象引用，而new Object()我们可以称之为在内存中产生了一个对象实例,当写下 o=null时，只是表示o不再指向堆中object的对象实例，不代表这个对象实例不存在了.
+ * 强引用,一直活着：类似“Object obj=new Object（）”这类的引用，只要强引用还存在，垃圾收集器永远不会回收掉被引用的对象实例
+ *
+ * 软引用,有一次活的机会:软引用关联着的对象,在系统将要发生内存溢出异常之前，将会把这些对象实例列进回收范围之中进行第二次回收。如果这次回收还没有足够的内存，才会抛出内存溢出异常
+ *       在JDK 1.2之后，提供了SoftReference类来实现软引用.
+ * 弱引用,回收就会死亡,当垃圾收集器工作时，无论当前内存是否足够，都会回收掉只被弱引用关联的对象实例,
+ *       在JDK 1.2之后，提供了WeakReference类来实现弱引用.
+ * 虚引用,它是最弱的一种引用关系,对象的虚引用对其完全不会对其生存时间构成影响,也无法通过虚引用来取得一个对象实例
+ *       为一个对象设置虚引用关联的唯一目的就是能在这个对象实例被收集器回收时收到一个系统通知,在JDK 1.2之后，提供了PhantomReference类来实现虚引用
+ *
+ *3.2)ThreadLocal产生内存泄漏的原因:
+ * ThreadLocalMap使用ThreadLocal的弱引用作为key,那么系统 GC 的时候，这个ThreadLocal势必会被回收，
+ *               这样一来，ThreadLocalMap中就会出现key为null的Entry，就没有办法访问这些key为null的Entry的value,
+ *               如果当前线程再迟迟不结束的话，这些key为null的Entry的value就会一直存在一条强引用链.
+ *
+ * ThreadLocal里面使用了一个存在弱引用的map(ThreadLocal.ThreadLocalMap),这个Map的key使用了弱引用，每个key都弱引用指向threadloca，
+ *              当把threadlocal实例置为null以后，没有任何强引用指向threadlocal实例，所以threadlocal将会被gc回收，我们的value却不能回收，而这块value永远不会被访问到了，所以存在着内存泄露。
+ *
+ *3.3)ThreadLocal存泄漏的根源是:由于ThreadLocalMap的生命周期跟Thread一样长，如果没有手动删除对应key就会导致内存泄漏，而不是因为弱引用.
+ *
+ *3.4)避免内存泄漏:每次使用完ThreadLocal，都调用它的remove()方法，清除数据.
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *4)ThreadLocal的子线程和主线程交互共享变量(子线程和主线程的ThreadLocal进行交互)：
  * https://blog.csdn.net/liubenlong007/article/details/107049375
  *
  *
@@ -40,8 +76,15 @@ public class ThreadLocalDemo {
 
     public static void main(String[] args) {
 
-
-
+         ThreadLocal<LocalVariable> local = new ThreadLocal<>();
 
     }
+
+
+    class LocalVariable {//总共有5M
+        private byte[] locla = new byte[1024 * 1024 * 5];
+    }
+
 }
+
+
