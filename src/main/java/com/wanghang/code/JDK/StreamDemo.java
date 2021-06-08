@@ -48,7 +48,7 @@ public class StreamDemo {
          *4:对list的collect(Collector c)收集操作
          * 将流转换为其他形式
          */
-     //  streamDemo.collect();
+       streamDemo.collect();
 
 
         /**
@@ -78,7 +78,7 @@ public class StreamDemo {
          *
          *
          */
-        streamDemo.mapOrFlatMap();
+      //  streamDemo.mapOrFlatMap();
     }
 
 
@@ -296,13 +296,23 @@ public class StreamDemo {
 
 
        //3.4:将 List<String> list变成List<Employee>
+        List<Integer> idList=new ArrayList<>();
+        idList.add(101);
+        idList.add(102);
+        idList.add(103);
+
+        List<Employee> employeeListNew = idList.stream().map(e -> {
+            Employee Employee = new Employee(e, "wanghang", null, null, null);   //e.getId()则表示还是用原来的值
+            return Employee;
+        }).collect(Collectors.toList());
+        System.out.println("employeeListNew:"+employeeListNew);
 
 
         //3.5将字符串已逗号分割,变成List<Long>
         String str="100,200,300,400,500";
         String[] strArr = str.split(",");
         List<Long> collect4 = Arrays.stream(strArr).map(s -> Long.parseLong(s.trim())).collect(Collectors.toList());
-        System.out.println("collect:"+collect);
+        System.out.println("collect:"+collect4);
     }
 
 
