@@ -412,7 +412,7 @@ public class StreamDemo {
                     return e;
                 }).collect(Collectors.toList());
         System.out.println("二次改动前employeesList"+employeesList);
-        System.out.println("employeesListNew1"+employeesListNew1);
+        System.out.println("二次改动后employeesListNew1"+employeesListNew1);
     }
 
 

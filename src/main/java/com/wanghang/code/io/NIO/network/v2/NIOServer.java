@@ -56,8 +56,6 @@ public class NIOServer {
 
         public ServerHandle(int port){
             try {
-                //创建选择器
-                selector = Selector.open();
                 //打开监听通道
                 serverChannel = ServerSocketChannel.open();
                 //如果为 true，则此通道将被置于阻塞模式；如果为 false，则此通道将被置于非阻塞模式
@@ -65,6 +63,10 @@ public class NIOServer {
                 serverChannel.configureBlocking(false);//开启非阻塞模式
                 //绑定端口 backlog设为1024
                 serverChannel.socket().bind(new InetSocketAddress("127.0.0.1",port),1024);
+
+                //创建Selector
+                selector = Selector.open();
+
                 //监听客户端连接请求
                 //只要ServerSocketChannel及SocketChannel向Selector注册了特定的事件，Selector就会监控这些事件是否发生。
                 serverChannel.register(selector, SelectionKey.OP_ACCEPT);
@@ -90,7 +92,7 @@ public class NIOServer {
             while (started){
                 try {
                     //无论是否有读写事件发生，selector每隔1s被唤醒一次
-                    selector.select(1000);                                        //selector.select()与 selector.select(1000)的区别;
+                    selector.select();                                        //selector.select()与 selector.select(1000)的区别;
                     //阻塞,只有当至少一个注册的事件发生的时候才会继续.
                     Set<SelectionKey> keys = selector.selectedKeys();
                     Iterator<SelectionKey> it = keys.iterator();

@@ -58,12 +58,12 @@ public class NIOClient {
             this.host = ip;
             this.port = port;
             try {
-                //创建选择器
-                selector = Selector.open();
                 //打开监听通道
                 socketChannel = SocketChannel.open();
                 //如果为 true，则此通道将被置于阻塞模式；如果为 false，则此通道将被置于非阻塞模式
                 socketChannel.configureBlocking(false);//开启非阻塞模式
+                //创建选择器
+                selector = Selector.open();
                 started = true;
             } catch (IOException e) {
                 e.printStackTrace();
@@ -90,7 +90,7 @@ public class NIOClient {
             while (started){
                 try {
                     //无论是否有读写事件发生，selector每隔1s被唤醒一次
-                    selector.select(1000);
+                    selector.select();
                     Set<SelectionKey> keys = selector.selectedKeys();
                     Iterator<SelectionKey> it = keys.iterator();
                     SelectionKey key = null;
@@ -155,8 +155,11 @@ public class NIOClient {
 
        //处理连接：
         private void doConnect() throws IOException {
-            if(socketChannel.connect(new InetSocketAddress(host,port)));
-            else socketChannel.register(selector, SelectionKey.OP_CONNECT);
+            if(socketChannel.connect(new InetSocketAddress(host,port))){
+                socketChannel.register(selector, SelectionKey.OP_READ);
+            } else {
+                socketChannel.register(selector, SelectionKey.OP_CONNECT);
+            }
         }
 
 
