@@ -48,7 +48,7 @@ public class StreamDemo {
          *4:对list的collect(Collector c)收集操作
          * 将流转换为其他形式
          */
-       streamDemo.collect();
+   //    streamDemo.collect();
 
 
         /**
@@ -79,6 +79,9 @@ public class StreamDemo {
          *
          */
       //  streamDemo.mapOrFlatMap();
+
+
+        streamDemo.reduce();
     }
 
 
@@ -295,16 +298,20 @@ public class StreamDemo {
         System.out.println("collect test collect  end");
 
 
-       //3.4:将 List<String> list变成List<Employee>
+       //3.4:将 List<String> list变成List<Employee>,也就是map的操作;
         List<Integer> idList=new ArrayList<>();
         idList.add(101);
         idList.add(102);
         idList.add(103);
 
         List<Employee> employeeListNew = idList.stream().map(e -> {
-            Employee Employee = new Employee(e, "wanghang", null, null, null);   //e.getId()则表示还是用原来的值
-            return Employee;
-        }).collect(Collectors.toList());
+            if(e!=null){
+                Employee Employee = new Employee(e, "wanghang", null, null, null);   //e.getId()则表示还是用原来的值
+                return Employee;
+            }else {
+                return null;             //这个等于null则通过:filter(Objects::isNull)这中方式过滤
+            }
+        }).filter(Objects::isNull).collect(Collectors.toList());
         System.out.println("employeeListNew:"+employeeListNew);
 
 
@@ -316,10 +323,14 @@ public class StreamDemo {
     }
 
 
+
     /**
      *java8的toMap操作,将list变成Map
      * 将 List<Employee> employeeList里的list数据变成
      * id=Employee这样的Map结构,但是对于这个map的key值不能重复,如果重读的话则会报错的
+     *
+     * List<Employee> ->Map<key,Employee>
+     *
      * todo:这个Function.identity()不是太清楚
      */
     public void toMap(){
@@ -329,6 +340,7 @@ public class StreamDemo {
                 .collect(Collectors.toMap(Employee::getId, Function.identity()));
         System.out.println("collect:"+collect);
 
+        //1:Map的数据形式:
         Map<Integer,String> map=new HashMap<>();
         map.put(1,"a");
         map.put(2,"b");
@@ -388,13 +400,8 @@ public class StreamDemo {
      * flatMap：接收一个函数作为参数，将流中的每个值都换成另一个流，然后把所有流连接成一个流.
      *
      * map,通过函数，将原来employeesList里的每一个元素的name和salary都更改了(是每一个元素).
-     *
-     *
-     *
-     *
      */
     public void mapOrFlatMap(){
-
         //1.1:英文字符串数组的元素全部改为大写(变成新的List)
         String[] strArr = { "abcd", "bcdd", "defde", "fTr" };
         List<String> strList = Arrays.stream(strArr).map(String::toUpperCase).collect(Collectors.toList());
@@ -423,10 +430,75 @@ public class StreamDemo {
                 }).collect(Collectors.toList());
         System.out.println("二次改动前employeesList"+employeesList);
         System.out.println("二次改动后employeesListNew1"+employeesListNew1);
+
+
+        //3.5,List的flatMap,将三个字符连在一起
+        String str1="1,2,3,4";
+        String str2="100";
+        String str3="a,b,c,d";
+        List<String> strList1 = Arrays.asList(str1, str2,str3);
+        System.out.println("strList:"+strList1);
+        String allStr = str1 + str2 + str3;
+        System.out.println("allStr:"+allStr);   //三个字符串自然地架子啊一起
+
+        List<String> collect5 = strList1.stream().flatMap(s -> {
+            String[] strArr1 = s.split(",");
+            Stream<String> stream = Arrays.stream(strArr1);
+            return stream;
+        }).collect(Collectors.toList());
+        System.out.println("通过flatMap将字符串连在一起:"+collect5);
     }
 
 
+    /**
+     *规约(reduce):顾名思义，是把一个流缩减成一个值，能实现对集合求和、求乘积和求最值操作
+     * 求和：sum
+     * 求乘积：
+     * 求最大值：
+     */
+    public void  reduce(){
+        List<Integer> list = Arrays.asList(1, 3, 2, 8, 11, 4);
+        //1.1:求和方式1
+        Optional<Integer> sum1 = list.stream().reduce((x, y) -> x + y);
+        //1.1:求和方式2
+        Optional<Integer> sum2 = list.stream().reduce(Integer::sum);
+        Integer sum = list.stream().reduce(0, Integer::sum);
+        System.out.println("list求和：" + sum1.get() + "," + sum2.get() + "," + sum);
 
+        //1.2:求乘积：
+        Optional<Integer> reduce = list.stream().reduce((x, y) -> x * y);
+        System.out.println("list求积：" + reduce.get());
+
+        //1.3:求最大值
+        Optional<Integer> max1 = list.stream().reduce((x, y) -> x > y ? x : y);
+        Optional<Integer> max2 = list.stream().reduce(Integer::max);
+        System.out.println("list求最大值：" + max1.get() + "," + max2.get());
+
+
+        List<Employee> employeeList = init();
+
+        //2:年龄求和：先变成List<Interge>,然后通过这个reduce来求和：
+        Stream<Integer> integerStream = employeeList.stream().map(Employee::getAge);
+        Optional<Integer> ageSum = employeeList.stream().map(Employee::getAge).reduce(Integer::sum);
+        System.out.println("年龄之和：" + max1.get() + "," + max2.get());
+
+        //3:求平均工资：
+        Double averagSalary = employeeList.stream().collect(Collectors.averagingDouble(Employee::getSalary));
+        System.out.println("平均工资为:" +averagSalary);
+
+        //4:求最值(最高工资):先变成Salary的stream，然后在这个stream里求最值
+        Optional<Double> maxCollect = employeeList.stream().map(Employee::getSalary).collect(Collectors.maxBy(Double::compareTo));
+        System.out.println("最高工资为:" +maxCollect.get());
+
+        //5:求工资之和：
+        DoubleSummaryStatistics doublecollect = employeeList.stream().collect(Collectors.summarizingDouble(Employee::getSalary));
+        System.out.println("工资和为:" +doublecollect.getSum());   //可以求出这一列的和，平均数，最大值，最小值
+        System.out.println("doublecollect最高工资:" +doublecollect.getMax());
+
+        //6:根据Status分组:
+        Map<Employee.Status, List<Employee>> groupingByCollectMap = employeeList.stream().collect(Collectors.groupingBy(Employee::getStatus));
+        System.out.println("根据Status分组的Map为:"+groupingByCollectMap);
+    }
 
 
 
@@ -448,7 +520,6 @@ public class StreamDemo {
         );
         return emps;
     };
-
     public static List<Employee> init1(){
         List<Employee>  emps= Arrays.asList(
                 new Employee(101, "张三", 18, 9999.99, Employee.Status.FREE),
@@ -462,8 +533,6 @@ public class StreamDemo {
         return emps;
     };
 
-
-
     //测试list的合并
     public static List<Employee> init2(){
         List<Employee>  emps= Arrays.asList(
@@ -474,7 +543,6 @@ public class StreamDemo {
         );
         return emps;
     };
-
     public static List<Employee> init3(){
         List<Employee>  emps= Arrays.asList(
                 new Employee(101, "张三", 18, 9999.99, Employee.Status.FREE),
@@ -484,21 +552,6 @@ public class StreamDemo {
         return emps;
     };
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @Data
@@ -523,7 +576,6 @@ class Employee {
         //
         VOCATION;
     }
-
     public Employee(Integer id, String name, Integer age, Double salary, Status status) {
         this.id = id;
         this.name = name;
@@ -532,3 +584,21 @@ class Employee {
         this.status = status;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
