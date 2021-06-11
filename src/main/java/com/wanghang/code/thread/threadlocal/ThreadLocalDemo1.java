@@ -53,38 +53,45 @@ import java.util.concurrent.TimeUnit;
  *3.4)避免内存泄漏:每次使用完ThreadLocal，都调用它的remove()方法，清除数据.
  *
  *
- *
- *
- *
- *
- *
- *
  *4)ThreadLocal的子线程和主线程交互共享变量(子线程和主线程的ThreadLocal进行交互)：
  * https://blog.csdn.net/liubenlong007/article/details/107049375
  *
  *
  * 阿里开源transmittable-thread-local(TTL),ThreadLocal的需求场景页就是TransmittableThreadLocal的潜在需求场景，可以看下ThreadLocal的具体运用
  * https://github.com/alibaba/transmittable-thread-local
- *
- *
- *
- *
  */
 
-public class ThreadLocalDemo {
 
+
+//ThreadLocalDemo1不实用ThreadLocal的情况
+public class ThreadLocalDemo1 {
+    public static final Integer SIZE = 500;
 
     public static void main(String[] args) {
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(5, 5, 1, TimeUnit.MINUTES, new LinkedBlockingDeque<>());
 
-         ThreadLocal<LocalVariable> local = new ThreadLocal<>();
+        //设置JVM的运行的参数: -Xms40m -Xmx40m -Xmn10m -XX:+UseParallelGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps
+        try {
+            for (int i = 0; i < SIZE; i++) {
+                //1:使用线程池提交五个线程：
+                executor.execute(() -> {
+                    new LocalVariable();
+                    System.out.println("线程:"+Thread.currentThread().getName()+",开始执行");
+                });
 
+                //2:这里变成了主线程,在线程池的线程执行完成之后，让主线程休眠100毫秒;
+                System.out.println("当前线程的名字为:"+Thread.currentThread().getName());
+                Thread.sleep(100);
+            }
+        }catch(InterruptedException e){
+
+        }
     }
 
-
-    class LocalVariable {//总共有5M
+    //占用内存的类;
+    static class LocalVariable {
         private byte[] locla = new byte[1024 * 1024 * 5];
     }
-
 }
 
 
