@@ -13,13 +13,18 @@ import java.util.stream.Stream;
 
 /**
  *JDK1.8 stream.Stream的操作:
- * 参考博文:
- * https://blog.csdn.net/mu_wind/article/details/109516995(重点推荐推荐)
+ * 1)参考博文:
+ * https://blog.csdn.net/mu_wind/article/details/109516995  (重点推荐推荐)
  * https://yuanyu.blog.csdn.net/article/details/105026457
  *
+ * https://www.jianshu.com/p/5493b7685b96   (stream一些函数的综合运用,这一篇也是不错的)
  *
- * java集合的合并操作:
-  https://gitee.com/GitHaoChen/java_foundation/blob/master/guava-test/src/main/java/com/zhuoli/guava/test/java8mergelist/Java8MergeListTest.java
+ *
+ * 2)java集合的合并操作:
+                     https://gitee.com/GitHaoChen/java_foundation/blob/master/guava-test/src/main/java/com/zhuoli/guava/test/java8mergelist/Java8MergeListTest.java
+
+   3):java8的综合操作:
+                    https://www.jianshu.com/p/442532d890e5
  */
 
 public class StreamDemo {
