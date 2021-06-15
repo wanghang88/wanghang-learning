@@ -20,6 +20,13 @@ package com.wanghang.code.JVM;
  * 3)方法区中常量引用的对象
  * 4)本地方法栈中的JNI（Native方法）的引用对象
  *
+ *
+ *
+ *2)关于JVM面试的总结不错的博客(基本上jvm的知识点都有)
+ * https://joonwhee.blog.csdn.net/article/details/79692477
+ *
+ *
+ *
  */
 public class GCRootDemo {
 
