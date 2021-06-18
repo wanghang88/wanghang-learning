@@ -61,6 +61,11 @@ import java.nio.channels.FileChannel;
  *
  *7)NIO操作文件参考博文：
  *                 https://blog.csdn.net/suifeng3051/article/details/48160753
+ *
+ *
+ *
+ *8)NIO相关博文介绍:
+ *               https://www.cnblogs.com/xrq730/p/5074558.html
  */
 public class NIODemo {
 
@@ -204,17 +209,6 @@ public class NIODemo {
         long end = System.currentTimeMillis();
         System.out.println("缓冲字符流耗时：" + (end - start) + " ms,BufferedWriter文件大小：" + targetFile.length() / 1024 + " kb");
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
     //准备数据：D:/wanghang/data.txt
