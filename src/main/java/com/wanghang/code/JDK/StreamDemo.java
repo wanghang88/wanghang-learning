@@ -272,6 +272,12 @@ public class StreamDemo {
         System.out.println(String.join(",", empNameList));
         System.out.println("collect test toList end");
 
+        List<String> list=new ArrayList<>();
+        list.add("100");
+        list.add("200");
+        String newStr = String.join(",", list);
+        System.out.println("newStr:"+newStr);
+
         //2:collect的toSet
         Set<String> empNameSet = employeeList.stream()
                 .map(Employee::getName)
