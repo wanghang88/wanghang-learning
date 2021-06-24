@@ -149,7 +149,6 @@ public class Java8MapDemo {
         System.out.println("linkedHashMap:"+linkedHashMap);
     }
 
-
     //将Map转成List
     public static void map2List(){
         List<Employee> employeeList = init4();
@@ -158,11 +157,14 @@ public class Java8MapDemo {
                 .collect(Collectors.toMap(Employee::getStatus, Function.identity(),(key1,key2)->key1));
         Collection<Employee> values = map.values();
         System.out.println("values:"+values);
+
+        List<Employee> list = new ArrayList<>(map.values());
+        System.out.println("list:"+list);
+
+        Set<Employee> set = new HashSet<>(map.values());
+        System.out.println("set:"+set);
+
     }
-
-
-
-
 
     public static List<Employee> init3(){
         List<Employee>  emps= Arrays.asList(
@@ -172,6 +174,7 @@ public class Java8MapDemo {
         );
         return emps;
     };
+
 
     public static List<Employee> init4(){
         List<Employee>  emps= Arrays.asList(
