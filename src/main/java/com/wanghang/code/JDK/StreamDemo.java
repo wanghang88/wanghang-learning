@@ -87,7 +87,7 @@ public class StreamDemo {
         streamDemo.reduce();
 
 
-        streamDemo.singletonList();
+        streamDemo.collectionsTest();
     }
 
 
@@ -521,12 +521,17 @@ public class StreamDemo {
      * get()
      * reverse()
      * copy()
+
+     (小傅哥)Collections对list的操作额封装(包括二分查找, 旋转,洗牌等算法)
+     https://bugstack.cn/interview/2020/09/10/%E9%9D%A2%E7%BB%8F%E6%89%8B%E5%86%8C-%E7%AC%AC10%E7%AF%87-%E6%89%AB%E7%9B%B2java.util.Collections%E5%B7%A5%E5%85%B7%E5%8C%85-%E5%AD%A6%E4%B9%A0%E6%8E%92%E5%BA%8F-%E4%BA%8C%E5%88%86-%E6%B4%97%E7%89%8C-%E6%97%8B%E8%BD%AC%E7%AE%97%E6%B3%95.html
      */
-    public void singletonList(){
+    public void collectionsTest(){
         Long versionCode=100L;
         List<Long> longs = Collections.singletonList(versionCode);
         System.out.println("longs:"+longs);
     }
+
+
 
 
     public static List<Employee> init(){
