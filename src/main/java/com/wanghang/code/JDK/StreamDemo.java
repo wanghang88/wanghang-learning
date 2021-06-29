@@ -2,8 +2,6 @@ package com.wanghang.code.JDK;
 
 
 import com.alibaba.fastjson.JSONObject;
-import lombok.Data;
-import lombok.ToString;
 
 import java.util.*;
 import java.util.function.Function;
@@ -87,6 +85,9 @@ public class StreamDemo {
 
 
         streamDemo.reduce();
+
+
+        streamDemo.singletonList();
     }
 
 
@@ -512,11 +513,20 @@ public class StreamDemo {
     }
 
 
-
-
-
-
-
+    /**
+     *java.util.Collections中常见的api：
+     * singletonList()
+     * sort()
+     * binarySearch()
+     * get()
+     * reverse()
+     * copy()
+     */
+    public void singletonList(){
+        Long versionCode=100L;
+        List<Long> longs = Collections.singletonList(versionCode);
+        System.out.println("longs:"+longs);
+    }
 
 
     public static List<Employee> init(){
