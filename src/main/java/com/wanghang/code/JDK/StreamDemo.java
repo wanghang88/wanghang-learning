@@ -532,6 +532,15 @@ public class StreamDemo {
     }
 
 
+    public void arraysTest(){
+        String[] strings = {"aa", "bb", "cc"};
+        List<String> stringList = Arrays.asList(strings);
+        Arrays.sort(strings);
+        Arrays.binarySearch(strings,1);
+        System.out.println("stringList:"+stringList);
+    }
+
+
 
 
     public static List<Employee> init(){
