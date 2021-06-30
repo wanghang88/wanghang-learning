@@ -238,16 +238,29 @@ package com.wanghang.code.MianShi;
 
 
 
- *6)系统运维以及DevOps以及Docker,K8s
+  6)系统运维以及DevOps以及Docker,K8s
+    1:常用的Linux命令
+      grep命令：
+              cat f.txt | grep -c 'SHOPBASE'      查看f文件下模糊匹配SHOPBASE关键字
+              cat f.txt | grep -i shopbase
+      top命令:
+             ps -ef | grep java   查看java进程
+             top -H -p pid        （获得线程10进制转16进制后jstack去抓看这个线程到底在干啥）
 
 
 
 
 
 
- *7)程序设计，代码优化(项目分层啊,DDD领域设计,java设计模式)？
- *
- *
+
+ 7)程序设计，代码优化(项目分层啊,DDD领域设计,java设计模式)？
+
+
+
+
+
+
+
  */
 
 public class MianShiDemo {
