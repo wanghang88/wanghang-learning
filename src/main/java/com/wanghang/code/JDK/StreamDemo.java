@@ -88,6 +88,9 @@ public class StreamDemo {
 
 
         streamDemo.collectionsTest();
+
+
+        streamDemo.streamOf();
     }
 
 
@@ -538,6 +541,13 @@ public class StreamDemo {
         Arrays.sort(strings);
         Arrays.binarySearch(strings,1);
         System.out.println("stringList:"+stringList);
+    }
+
+
+    //通过Sream的方式初始化List
+    public void streamOf(){
+        List<String> strList = Stream.of("1", "2", "3").collect(Collectors.toList());
+        System.out.println("strList:"+strList);
     }
 
 
