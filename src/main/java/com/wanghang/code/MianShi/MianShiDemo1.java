@@ -26,6 +26,8 @@ package com.wanghang.code.MianShi;
     https://github.com/AobingJava/JavaFamily
     2.4)JavaGuide的博客，主要有Java基础，特别是并发,JVM,Spring方面注重基础的面试总结
     https://github.com/Snailclimb/JavaGuide
+    2.5)这个总结得也不错
+    https://github.com/idaSmilence/javaP7/blob/master/JAVA.md
 
 
 
