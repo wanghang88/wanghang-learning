@@ -5,6 +5,10 @@ import lombok.Data;
 
 /**
  * Class类自定义hashCode()和equals()方法
+ *
+ * 1:java Class类自定义hashCode和eqauls方法,设计思路
+ *
+ *
  */
 @Data
 @Builder
