@@ -63,7 +63,7 @@ public class StreamDemo {
         /**
          * 6:集合的交集,合集,差集的操作
          */
-    //    streamDemo.mergerTest();
+        streamDemo.mergerTest();
 
 
         /**
@@ -84,13 +84,13 @@ public class StreamDemo {
       //  streamDemo.mapOrFlatMap();
 
 
-        streamDemo.reduce();
+     //   streamDemo.reduce();
 
 
-        streamDemo.collectionsTest();
+     //   streamDemo.collectionsTest();
 
 
-        streamDemo.streamOf();
+     //   streamDemo.streamOf();
     }
 
 
