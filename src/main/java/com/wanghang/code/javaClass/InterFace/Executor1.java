@@ -1,4 +1,4 @@
-package com.wanghang.code.thread.completionService;
+package com.wanghang.code.javaClass.InterFace;
 
 public interface Executor1 {
     void execute(Runnable command);
