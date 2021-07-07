@@ -12,9 +12,11 @@ package com.wanghang.code.MianShi;
     java基础总结得比较多:
     https://github.com/irwinai/JavaInterview/blob/main/%E6%9D%A5%E8%87%AA%E6%9C%8B%E5%8F%8B%E6%9C%80%E8%BF%91%E9%98%BF%E9%87%8C%E3%80%81%E8%85%BE%E8%AE%AF%E3%80%81%E7%BE%8E%E5%9B%A2%E7%AD%89P7%E5%B2%97%E4%BD%8D%E9%9D%A2%E8%AF%95%E9%A2%98.md
 
-
     java进阶面试题,包含答案(synchronized,ReentrantLock,Java内存模型,volatile,volatile,线程池,Callable,Atomic原子等,AQS)
     https://mp.weixin.qq.com/s/cdHfTTvMpH60SwG2bjTMBw
+
+    面试题没有答案,不过可以参考面试题
+    https://mp.weixin.qq.com/s/aNteUiHsyDzjGks6r7MO4g
 
 
     2:java面试相关的github：
