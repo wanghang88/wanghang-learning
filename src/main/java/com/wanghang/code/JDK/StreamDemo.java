@@ -2,6 +2,7 @@ package com.wanghang.code.JDK;
 
 
 import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Lists;
 
 import java.util.*;
 import java.util.function.Function;
@@ -90,7 +91,10 @@ public class StreamDemo {
      //   streamDemo.collectionsTest();
 
 
-     //   streamDemo.streamOf();
+        streamDemo.streamOf();
+
+
+        streamDemo.listToStr();
     }
 
 
@@ -548,6 +552,28 @@ public class StreamDemo {
     public void streamOf(){
         List<String> strList = Stream.of("1", "2", "3").collect(Collectors.toList());
         System.out.println("strList:"+strList);
+
+        List<String> strList1 = Arrays.asList("1", "2", "3");   //TODO:这样初始化的List不能add()? get(index) 和 set(index，element)整两个方法可以正常使用
+        strList1.add("4");
+        System.out.println("strList1:"+strList1);
+
+        List<String> strList2 = Lists.newArrayList(Arrays.asList("1", "2", "3"));    //这样避免Arrays.asList 初始化出来的List不能add()
+        strList2.add("4");
+        System.out.println("strList2:"+strList2);
+    }
+
+
+    public void listToStr(){
+        List<String> list=new ArrayList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        list.add("d");
+        String listToStr = String.join(",", list);
+        System.out.println("list:"+list+"listToStr:"+listToStr);
+
+        String collectStr = list.stream().collect(Collectors.joining(","));
+        System.out.println("collectStr:"+collectStr);
     }
 
 
