@@ -15,8 +15,14 @@ package com.wanghang.code.MianShi;
     java进阶面试题,包含答案(synchronized,ReentrantLock,Java内存模型,volatile,volatile,线程池,Callable,Atomic原子等,AQS)
     https://mp.weixin.qq.com/s/cdHfTTvMpH60SwG2bjTMBw
 
-    面试题没有答案,不过可以参考面试题
+    java基础juc中 LockSupport & AQS & 各种锁 & 分布式锁的分析，特别是对锁的分析，互斥锁，aqs，分布式锁等
+    https://www.jianshu.com/p/357fa6164bc2
+
+    面试题没有答案,不过可以参考面试题(据说是头条的面试题)
     https://mp.weixin.qq.com/s/aNteUiHsyDzjGks6r7MO4g
+
+
+
 
 
     2:java面试相关的github：
