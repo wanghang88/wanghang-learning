@@ -34,6 +34,11 @@ package com.wanghang.code.MianShi;
    https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484857&idx=1&sn=21c2986a97b3d49f98f0d7f2c57e1822&source=41#wechat_redirect
    e)如何设计一个高性能的秒杀系统
    https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484869&idx=1&sn=f57664eac0e9e6677d317b6bff959276&chksm=ceb9f96ef9ce7078ff6783500a28afad207d2be53f9d9e0d2e0e44f72145a7562517e3dba897&scene=21#wechat_redirect
+   f)聊聊分布式锁
+   https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484819&idx=1&sn=d7305a75cf74cd6819343bfd772de21f&chksm=ceb9f938f9ce702ed7515de51856c81f0b8595f822d0c627a930d348cfcaa400e6607d47438b&scene=178&cur_album_id=1874615391855968264#rd
+
+   借助SPI 解决复杂业务扩展问题
+   https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484842&idx=1&sn=b2ec39dba9bdc2e92378383c93c62d3d&chksm=ceb9f901f9ce7017c420a89b8ee3a5a998eb2c1b7eccf36a6c0e85906933a43243c1bce4e646&scene=178&cur_album_id=1874615391855968264#rd
 
    电商设计
    微关技术公众号->玩转电商(关于电商中使用的一些玩法以及设计方案的总结):
