@@ -11,6 +11,11 @@ import java.util.concurrent.atomic.AtomicReference;
  *
  *基于AtomicReference实现CAS自旋锁:
  *      场景：A线程先进来调用myLock方法自己持有锁5秒，B随后进来发现当前有线程持有锁，不是null，所以只能通过自旋等待，直到A释放锁后B随后抢到
+ *
+ *2:基于csa原理的分析(总结得不错，以及还有对不安全集合变成安全集合的总结)
+   https://www.jianshu.com/p/5d0a64ae1a6b
+ *
+ *
  */
 public class CasSpinlock {
 
