@@ -577,6 +577,17 @@ public class StreamDemo {
     }
 
 
+    public void listToArr(){
+        List<String> list=new ArrayList<>();
+        list.add("a");
+        list.add("b");
+        list.add("c");
+        list.add("d");
+        String[] strArr= list.toArray(new String[list.size()]);
+        System.out.println("strArr:"+strArr);
+    }
+
+
 
 
     public static List<Employee> init(){
