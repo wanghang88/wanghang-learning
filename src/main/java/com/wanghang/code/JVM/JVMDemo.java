@@ -10,6 +10,11 @@ package com.wanghang.code.JVM;
  * https://yuanyu.blog.csdn.net/article/details/87554692
  *
  *
+ *
+ *c)JVM主要关于jvm的类的加载，运行时数据划分，class的结构
+ * https://blog.csdn.net/luanlouis/category_2630089.html
+ *
+ *
  *c)关于java虚拟机之直接内存(堆外内存)：
  *                1)不是虚拟机运行时数据区的一部分，也不是《Java虚拟机规范》中定义的内存区域，直接内存是Java堆外的，直接向系统申请的内存空间，
  *                    来源于NIO，通过存在堆中的DirectByteBuffer操作Native内存。
