@@ -2,18 +2,36 @@ package com.wanghang.code.JVM;
 
 
 /**
- *记录JVM相关的知识：
- *a)GC算法的介绍：
- * https://yuanyu.blog.csdn.net/article/details/87624961
- *
- *b)JVM:
- * https://yuanyu.blog.csdn.net/article/details/87554692
- *
- *
- *
- *c)JVM主要关于jvm的类的加载，运行时数据划分，class的结构
- * https://blog.csdn.net/luanlouis/category_2630089.html
- *
+  JVM:整体的大概介绍
+   https://yuanyu.blog.csdn.net/article/details/87554692
+
+
+  1:JVM的类加载
+   JVM的类加载以及双亲委派的介绍:
+   https://mp.weixin.qq.com/s/7aAu_blw6hrNtF17W0H2ag
+   了解双亲委派的机制然后打破双亲委派的介绍:
+   https://mp.weixin.qq.com/s/HHBL8VI5Y_ZM20Kje8BIZQ
+
+
+  2:JVM的运行数据划分
+  JVM主要关于jvm的类的加载，运行时数据划分，class的结构
+  https://blog.csdn.net/luanlouis/category_2630089.html
+
+
+  3:JVM的垃圾回收和垃圾回收算法:
+   JVM的垃圾回收算法
+   https://yuanyu.blog.csdn.net/article/details/87624961
+
+
+
+
+
+
+
+
+
+
+
  *
  *c)关于java虚拟机之直接内存(堆外内存)：
  *                1)不是虚拟机运行时数据区的一部分，也不是《Java虚拟机规范》中定义的内存区域，直接内存是Java堆外的，直接向系统申请的内存空间，

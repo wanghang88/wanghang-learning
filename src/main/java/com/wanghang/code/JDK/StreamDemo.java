@@ -7,6 +7,7 @@ import com.google.common.collect.Lists;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 
@@ -64,7 +65,7 @@ public class StreamDemo {
         /**
          * 6:集合的交集,合集,差集的操作
          */
-        streamDemo.mergerTest();
+     //   streamDemo.mergerTest();
 
 
         /**
@@ -91,10 +92,16 @@ public class StreamDemo {
      //   streamDemo.collectionsTest();
 
 
-        streamDemo.streamOf();
+     //   streamDemo.streamOf();
 
 
-        streamDemo.listToStr();
+     //   streamDemo.listToStr();
+
+
+        streamDemo.IntStreamRange();
+
+
+
     }
 
 
@@ -586,6 +593,20 @@ public class StreamDemo {
         String[] strArr= list.toArray(new String[list.size()]);
         System.out.println("strArr:"+strArr);
     }
+
+    public void  IntStreamRange(){
+        int i;
+        IntStream.range(0,5).forEach(item->{
+            System.out.println("item:"+item);
+        });
+
+        IntStream.rangeClosed(2,10).forEach(item->{
+            System.out.println("rangeClosed item:"+item);
+        });
+    }
+
+
+
 
 
 
