@@ -18,12 +18,15 @@ package com.wanghang.code.MianShi;
     java基础juc中 LockSupport & AQS & 各种锁 & 分布式锁的分析，特别是对锁的分析，互斥锁，aqs，分布式锁等
     https://www.jianshu.com/p/357fa6164bc2
 
+    2:面试题搜集无答案，可以参考下
     面试题没有答案,不过可以参考面试题(据说是头条的面试题)
     https://mp.weixin.qq.com/s/aNteUiHsyDzjGks6r7MO4g
+    菜鸟面试题搜集
+    https://mp.weixin.qq.com/s?__biz=MzIwNDgxNDM0MQ==&mid=2247492719&idx=1&sn=d76368b1194f82a6484b319ce9d7adba&chksm=9738c505a04f4c13cc6f01478379aa6c301e379ae38f691b4dc30ff5c2efd487c0a797c618af&scene=132#wechat_redirect
 
 
 
-   2:围绕系统优化，系统设计，中间件方面的优化
+   3:围绕系统优化，系统设计，中间件方面的优化
    a)高并发、高性能、高可用系统设计经验;
    https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484957&idx=1&sn=e50e0808cb6503ca7214bdd6fee4f134&chksm=ceb9fab6f9ce73a0c0725e381673fc7dc50c0594fb995b5f985b263143b34371e5e2936d7be0&scene=21#wechat_redirect
    b)高并发系统redis的设计
@@ -49,14 +52,14 @@ package com.wanghang.code.MianShi;
 
 
 
-    3:围绕JVM线上问题的面试的阶梯方案:
+    4:围绕JVM线上问题的面试的阶梯方案:
     a)线上服务的FGC问题排查
     https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484858&idx=1&sn=84d2082dfdbf06e2d5fa8a459f7a3e3b&source=41#wechat_redirect
 
 
 
 
-   4关于mysql相关的技术解决:
+    5关于mysql相关的技术解决:
     a)单台MySQL支撑不了这么多的并发请求,使用读写分离或者分库分表
     https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484864&idx=1&sn=e25652505319d4d13dcf5fc8e265bcae&source=41#wechat_redirect
     b)分库分表,[唯一id，数据迁移，但是事务和复杂的查询到是没有详细的讲]
@@ -67,7 +70,7 @@ package com.wanghang.code.MianShi;
 
 
 
-    4:java面试相关的github：
+    6:java面试相关的github：
     2.1)内容涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识
     https://github.com/aysaml/advanced-java
     2.2)就Hystrix介绍得比较不错,其他的不怎么行
@@ -81,7 +84,7 @@ package com.wanghang.code.MianShi;
 
 
 
-    5:可以学习java的github
+    7:可以学习java的github
     3.1)小傅哥(可以学习java基础的源码分析,Spring的源码分析，Netty的实战运用等)
     https://github.com/fuzhengwei/CodeGuide#netty-4x-%E4%B8%93%E9%A2%98
 
