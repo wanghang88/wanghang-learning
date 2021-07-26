@@ -1,4 +1,4 @@
-package com.wanghang.code.thread.thread.framework_design.case1.observe;
+package com.wanghang.code.thread.thread.framework_design.case1.v1.observe;
 
 public interface Observable {
 

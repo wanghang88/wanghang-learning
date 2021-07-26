@@ -1,9 +1,9 @@
-package com.wanghang.code.thread.thread.framework_design.case1.thread;
+package com.wanghang.code.thread.thread.framework_design.case1.v1.thread;
 
 
-import com.wanghang.code.thread.thread.framework_design.case1.Task;
-import com.wanghang.code.thread.thread.framework_design.case1.TaskLifecycle;
-import com.wanghang.code.thread.thread.framework_design.case1.observe.Observable;
+import com.wanghang.code.thread.thread.framework_design.case1.v1.Task;
+import com.wanghang.code.thread.thread.framework_design.case1.v1.TaskLifecycle;
+import com.wanghang.code.thread.thread.framework_design.case1.v1.observe.Observable;
 
 public class ObservableThread<T> extends Thread implements Observable {
 
