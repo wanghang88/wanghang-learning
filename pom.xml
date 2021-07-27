@@ -34,6 +34,13 @@
            <version>11.0.2</version>
        </dependency>
 
+       <!--guava的重试工具 -->
+       <dependency>
+           <groupId>com.github.rholder</groupId>
+           <artifactId>guava-retrying</artifactId>
+           <version>2.0.0</version>
+       </dependency>
+
        <dependency>
            <groupId>com.alibaba</groupId>
            <artifactId>fastjson</artifactId>
@@ -59,10 +66,6 @@
            <artifactId>hutool-all</artifactId>
            <version>5.5.0</version>
        </dependency>
-
-
-
-
    </dependencies>
 
 

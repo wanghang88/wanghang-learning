@@ -1,4 +1,4 @@
-package com.wanghang.code.JDK.random;
+package com.wanghang.code.JDK.commons_lang3.random;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
