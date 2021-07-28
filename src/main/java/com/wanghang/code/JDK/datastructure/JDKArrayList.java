@@ -1,4 +1,6 @@
-package com.wanghang.code.datastructure;
+package com.wanghang.code.JDK.datastructure;
+
+import com.wanghang.code.datastructure.List;
 
 import java.util.ArrayList;
 import java.util.Arrays;

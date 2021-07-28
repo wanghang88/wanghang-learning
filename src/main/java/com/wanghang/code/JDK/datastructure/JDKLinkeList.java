@@ -1,4 +1,4 @@
-package com.wanghang.code.datastructure;
+package com.wanghang.code.JDK.datastructure;
 
 import java.util.*;
 import java.util.List;

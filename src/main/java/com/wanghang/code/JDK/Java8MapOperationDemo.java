@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
  *java8对Map的操作:
  *
  */
-public class Java8MapDemo {
+public class Java8MapOperationDemo {
 
     public static void main(String[] args) {
        // forEach();

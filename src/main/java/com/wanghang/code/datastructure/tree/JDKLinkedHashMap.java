@@ -1,7 +1,5 @@
 package com.wanghang.code.datastructure.tree;
 
-import com.wanghang.code.datastructure.JDK18HashMap;
-
 import java.util.HashMap;
 import java.util.Map;
 
