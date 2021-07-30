@@ -15,6 +15,10 @@ package com.wanghang.code.datastructure;
     CSDN(程序员DMZ)的博文
     https://blog.csdn.net/qq_41907991/category_9292783.html
 
+
+   ****4:数据结构的github(包含数组,队列,栈等),重点推荐
+        https://github.com/MageByte-Zero/algorithms
+
  */
 public class DatastructureDemo {
 }
