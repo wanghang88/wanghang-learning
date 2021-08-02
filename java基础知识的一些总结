@@ -18,21 +18,20 @@ https://mp.weixin.qq.com/s/3SK251gv5w_Hnxy1oJPzhw
 
 
 3:JVM相关的知识
-1:JVM的类加载
+3.1)JVM的类加载
 JVM的类加载以及双亲委派的介绍:
 https://mp.weixin.qq.com/s/7aAu_blw6hrNtF17W0H2ag
 了解双亲委派的机制然后打破双亲委派的介绍:
 https://mp.weixin.qq.com/s/HHBL8VI5Y_ZM20Kje8BIZQ
 
-2:JVM的运行数据划分
+3.2)JVM的运行数据划分
 JVM主要关于jvm的类的加载，运行时数据划分，class的结构
 https://blog.csdn.net/luanlouis/category_2630089.html
 
-3:JVM的垃圾回收和垃圾回收算法:
+3.3)JVM的垃圾回收和垃圾回收算法:
 JVM的垃圾回收算法
 https://yuanyu.blog.csdn.net/article/details/87624961
 
-
-4:JVM的调优以及相关的问题排查:
+3.4)JVM的调优以及相关的问题排查:
 JVM的常见的参数
 https://mp.weixin.qq.com/s/XZFEgf1ZS7gNt7lku3TF4g
