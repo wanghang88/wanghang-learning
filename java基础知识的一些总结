@@ -28,6 +28,9 @@ https://mp.weixin.qq.com/s/HHBL8VI5Y_ZM20Kje8BIZQ
 JVM主要关于jvm的类的加载，运行时数据划分，class的结构
 https://blog.csdn.net/luanlouis/category_2630089.html
 
+3.3)JVM的java对象的回收以及Java对象在内存中
+https://caoju.blog.csdn.net/article/details/106583726
+
 3.3)JVM的垃圾回收和垃圾回收算法:
 JVM的垃圾回收算法
 https://yuanyu.blog.csdn.net/article/details/87624961

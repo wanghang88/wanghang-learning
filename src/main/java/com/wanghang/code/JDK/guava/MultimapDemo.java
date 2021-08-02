@@ -1,4 +1,4 @@
-package com.wanghang.code.guava;
+package com.wanghang.code.JDK.guava;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.HashMultimap;
