@@ -1,10 +1,7 @@
 package com.wanghang.code.JDK.datastructure;
 
 
-import com.google.common.hash.Hashing;
-
 import java.util.HashMap;
-import java.util.Map;
 
 /**
 
@@ -14,6 +11,9 @@ import java.util.Map;
 
  只要介绍和HashMap的原理,关于put方法讲解得比较详细
  https://mp.weixin.qq.com/s/3SK251gv5w_Hnxy1oJPzhw
+
+ HashMap的原理介绍,这一篇也不错(特别介绍了为什么HashMap的长度为什么是2的次幂)
+ https://caoju.blog.csdn.net/article/details/104776452
 
 
  HashMap的实现原理参考博文：
