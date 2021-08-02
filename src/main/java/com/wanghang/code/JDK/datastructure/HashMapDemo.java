@@ -133,7 +133,7 @@ public class HashMapDemo {
         System.out.println("hashmap:"+hashMap.size());
     }
 
-    //1:初始化
+    //1:初始化(JDK8的写法)
     static final int tableSizeFor(int cap) {
         int n = cap - 1;
         n |= n >>> 1;
@@ -145,7 +145,7 @@ public class HashMapDemo {
     }
 
 
-    //2:根据key求hash的值
+    //2:根据key求hash的值(JDK8的写法)
     static final int hash(Object key) {
         int h;
         return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
