@@ -16,7 +16,7 @@ package com.wanghang.code.datastructure;
     https://blog.csdn.net/qq_41907991/category_9292783.html
 
 
-   ****4:数据结构的github(包含数组,队列,栈等),重点推荐
+   ****4:数据结构的github(包含数组,队列,栈等),重点推荐(码哥字节的博客)
         https://github.com/MageByte-Zero/algorithms
 
  */
