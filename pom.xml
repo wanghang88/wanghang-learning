@@ -66,6 +66,15 @@
            <artifactId>hutool-all</artifactId>
            <version>5.5.0</version>
        </dependency>
+
+       <!--java 反射工具类 -->
+       <dependency>
+           <groupId>org.reflections</groupId>
+           <artifactId>reflections</artifactId>
+           <version>0.9.11</version>
+       </dependency>
+
+
    </dependencies>
 
 
