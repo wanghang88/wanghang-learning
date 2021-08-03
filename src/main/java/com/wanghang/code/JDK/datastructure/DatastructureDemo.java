@@ -8,5 +8,5 @@ package com.wanghang.code.JDK.datastructure;
 
 
  */
-public class JDKDatastructureDemo {
+public class DatastructureDemo {
 }
