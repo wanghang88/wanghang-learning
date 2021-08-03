@@ -16,6 +16,16 @@ import java.util.concurrent.Executors;
   2)UncaughtExceptionHandler的典型使用的场景:
   通过上述结果可以看到，该未知的异常被成功捕获到，我们可以在uncaughtException()方法中做一些释放资源、连接的操作，避免由于线程的突然中止导致资源无法释放。
 
+
+ 3)参考博文：
+ 博主:(恐龙弟旺仔)
+ https://blog.csdn.net/qq_26323323/article/details/104587345
+
+
+
+
+
+
  */
 public class UncaughtExceptionHandlerDemo {
 
@@ -23,11 +33,11 @@ public class UncaughtExceptionHandlerDemo {
     public static void main(String[] args) {
 
         //1:通过try-catch来抓捕线程执行中的异常，抓不到,因为在多线程环境下,线程抛出的异常是无法用try...catch捕获的。
-   //     test1();
+        test1();
 
 
        //2：使用UncaughtExceptionHandler处理，可以看到线程在uncaughtException()捕获到了。
-  //      test2();
+        test2();
 
 
         //3:线程池中使用UncaughtExceptionHandler,如果要使UncaughtExceptionHandler定义生效，需要在run()方法内部定义。
