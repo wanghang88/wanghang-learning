@@ -18,8 +18,12 @@ package com.wanghang.code.MianShi;
     java基础juc中 LockSupport & AQS & 各种锁 & 分布式锁的分析，特别是对锁的分析，互斥锁，aqs，分布式锁等
     https://www.jianshu.com/p/357fa6164bc2
 
-   常见的java面试题包含答案(触发FullGc的条件,JVM和JUC方面的比较多)---->(恐龙弟旺仔的博文)
-   https://blog.csdn.net/qq_26323323/article/details/83751404?spm=1001.2014.3001.5502
+    常见的java面试题包含答案(触发FullGc的条件,JVM和JUC方面的比较多)---->(恐龙弟旺仔的博文)
+    https://blog.csdn.net/qq_26323323/article/details/83751404?spm=1001.2014.3001.5502
+
+
+    全面介绍JVM的面试题(包括:java的类加载,GC垃圾回收,JVM的内存分配等)
+    https://riemann.blog.csdn.net/article/details/115473709
 
 
     //todo:面试的软实力(如何突出自己,以及和面试官沟通表达的技巧,到时候面试的时候可以参考下)
