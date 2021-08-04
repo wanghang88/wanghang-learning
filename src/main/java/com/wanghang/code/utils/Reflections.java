@@ -20,7 +20,7 @@ public class Reflections {
     private static final String GETTER_PREFIX = "get";
 
 
-    private Reflections() {
+    public Reflections() {
         throw new IllegalAccessError("Utility class");
     }
 
