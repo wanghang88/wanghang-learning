@@ -15,6 +15,9 @@ import java.util.HashMap;
  HashMap的原理介绍,这一篇也不错(特别介绍了为什么HashMap的长度为什么是2的次幂)
  https://caoju.blog.csdn.net/article/details/104776452
 
+ java8 的HashMap的初始化和扩容
+ https://riemann.blog.csdn.net/article/details/108678473
+
 
  HashMap的实现原理参考博文：
  （码辣架构）
