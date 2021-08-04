@@ -22,8 +22,8 @@ package com.wanghang.code.MianShi;
    https://blog.csdn.net/qq_26323323/article/details/83751404?spm=1001.2014.3001.5502
 
 
-
-
+    //todo:面试的软实力(如何突出自己,以及和面试官沟通表达的技巧,到时候面试的时候可以参考下)
+    https://mp.weixin.qq.com/s?__biz=MzI4Njc5NjM1NQ==&mid=2247486163&idx=1&sn=3f395ec8287050ac719d9237eb8107aa&chksm=ebd635ffdca1bce9f444940afeb0d86f6d83bcb2acde382057609225cba6faedf010222d1bfc&scene=21#wechat_redirect
 
     2:面试题搜集无答案，可以参考下
     面试题没有答案,不过可以参考面试题(据说是头条的面试题)
