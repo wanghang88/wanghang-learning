@@ -40,6 +40,14 @@ package com.wanghang.code.JVM;
 
 
 
+  6:JVM常见面试题的哔哩哔哩的视频:
+  https://www.bilibili.com/video/BV1854y1H7nR?spm_id_from=333.788.b_636f6d6d656e74.6
+
+
+
+
+
+
 
 
 
