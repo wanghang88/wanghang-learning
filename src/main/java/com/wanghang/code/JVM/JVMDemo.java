@@ -33,7 +33,21 @@ package com.wanghang.code.JVM;
 
 
   5:JVM调优:
+  主要是java的参数的设置
   https://mp.weixin.qq.com/s/7H_N9uv6RloSg-uk00eMrQ
+
+  主要是JVM的常用的民命令,查找性能点
+  https://mp.weixin.qq.com/s/tjTWWxgAq8gj5PK2nzMGnQ
+  比如：CPU过高问题的排查
+  第一步：第一步先找出Java进程ID，我部署在服务器上的Java应用名称为mrf-center
+         ps -ef | grep mrf-center | grep -v grep
+
+  第二步：第二步找出该进程内最耗费CPU的线程,
+         ps -Lfp pid(或者top -Hp pid)
+
+  第三部：轮到jstack上场,它用来输出线程的堆栈信息,
+        jstack 21711(线程的id)
+
 
 
 
