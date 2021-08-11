@@ -38,7 +38,7 @@ package com.wanghang.code.JVM;
 
   主要是JVM的常用的民命令,查找性能点
   https://mp.weixin.qq.com/s/tjTWWxgAq8gj5PK2nzMGnQ
-  比如：CPU过高问题的排查
+  比如：CPU过高问题的排查(jstack命令)
   第一步：第一步先找出Java进程ID，我部署在服务器上的Java应用名称为mrf-center
          ps -ef | grep mrf-center | grep -v grep
 
