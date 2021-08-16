@@ -1,6 +1,5 @@
 package com.wanghang.code.MianShi;
 
-
 /**
     1:java面试题目总结的博文(主要是面试题):
     https://blog.csdn.net/wb_snail/article/details/108134550
@@ -35,9 +34,10 @@ package com.wanghang.code.MianShi;
     菜鸟面试题搜集
     https://mp.weixin.qq.com/s?__biz=MzIwNDgxNDM0MQ==&mid=2247492719&idx=1&sn=d76368b1194f82a6484b319ce9d7adba&chksm=9738c505a04f4c13cc6f01478379aa6c301e379ae38f691b4dc30ff5c2efd487c0a797c618af&scene=132#wechat_redirect
 
+    3:总结的计算机网络的面试题(比较全面50道计算机网络的面试题,整理得相当不错)
+    https://mp.weixin.qq.com/s/_sdt1JqIVvO0LD3ckQGp4A
 
-
-   3:围绕系统优化，系统设计，中间件方面的优化
+   4:围绕系统优化，系统设计，中间件方面的优化
    a)高并发、高性能、高可用系统设计经验;
    https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484957&idx=1&sn=e50e0808cb6503ca7214bdd6fee4f134&chksm=ceb9fab6f9ce73a0c0725e381673fc7dc50c0594fb995b5f985b263143b34371e5e2936d7be0&scene=21#wechat_redirect
    b)高并发系统redis的设计
@@ -59,29 +59,19 @@ package com.wanghang.code.MianShi;
    https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg2NzYyNjQzNg==&action=getalbum&album_id=1874603714678751240&scene=173&from_msgid=2247484857&from_itemidx=1&count=3&nolastread=1#wechat_redirect
 
 
-
-
-
-
-    4:围绕JVM线上问题的面试的阶梯方案:
+    5:围绕JVM线上问题的面试的阶梯方案:
     a)线上服务的FGC问题排查
     https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484858&idx=1&sn=84d2082dfdbf06e2d5fa8a459f7a3e3b&source=41#wechat_redirect
 
 
-
-
-    5关于mysql相关的技术解决:
+    6关于mysql相关的技术解决:
     a)单台MySQL支撑不了这么多的并发请求,使用读写分离或者分库分表
     https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484864&idx=1&sn=e25652505319d4d13dcf5fc8e265bcae&source=41#wechat_redirect
     b)分库分表,[唯一id，数据迁移，但是事务和复杂的查询到是没有详细的讲]
     https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2650995634&idx=1&sn=439ef5b9ab800417f4f4745df1c1fcd0&scene=21#wechat_redirect
 
 
-
-
-
-
-    6:java面试相关的github：
+    7:java面试相关的github：
     2.1)内容涵盖高并发、分布式、高可用、微服务、海量数据处理等领域知识
     https://github.com/aysaml/advanced-java
     2.2)就Hystrix介绍得比较不错,其他的不怎么行
