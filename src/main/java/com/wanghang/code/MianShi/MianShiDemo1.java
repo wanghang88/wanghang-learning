@@ -90,6 +90,16 @@ package com.wanghang.code.MianShi;
     https://github.com/fuzhengwei/CodeGuide#netty-4x-%E4%B8%93%E9%A2%98
 
 
+    面试HR可能会问到的问题
+    https://blog.csdn.net/chuanchengdabing/article/details/118769749
+
+
+
+
+
+
+
+
 
  *
  */
