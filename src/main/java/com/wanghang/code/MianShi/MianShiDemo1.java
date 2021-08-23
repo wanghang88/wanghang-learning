@@ -22,6 +22,9 @@ package com.wanghang.code.MianShi;
     常见的java面试题包含答案(触发FullGc的条件,JVM和JUC方面的比较多)---->(恐龙弟旺仔的博文)
     https://blog.csdn.net/qq_26323323/article/details/83751404?spm=1001.2014.3001.5502
 
+    java中常见的面试题(CAS原理,java内存模型,java并发多线程,TheadLocal的内存泄漏,java的注解)
+    https://blog.csdn.net/guoguo527/category_10514554.html
+
 
     全面介绍JVM的面试题(包括:java的类加载,GC垃圾回收,JVM的内存分配等)
     https://riemann.blog.csdn.net/article/details/115473709
