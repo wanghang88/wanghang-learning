@@ -5,6 +5,9 @@ package com.wanghang.code.JVM;
   JVM:整体的大概介绍
    https://yuanyu.blog.csdn.net/article/details/87554692
 
+  JVM 整体知识的整体总结(模块)
+  https://blog.csdn.net/yxh13521338301/category_10073254.html
+
 
   1:JVM的类加载
    JVM的类加载以及双亲委派的介绍:
