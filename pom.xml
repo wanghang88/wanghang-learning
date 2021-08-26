@@ -73,6 +73,18 @@
            <artifactId>reflections</artifactId>
            <version>0.9.11</version>
        </dependency>
+
+
+     <!--
+       这个依赖到时候研究下
+      <dependency>
+           <groupId>com.feilong.platform</groupId>
+           <artifactId>feilong-core</artifactId>
+           <version>1.10.4</version>
+       </dependency>
+
+      -->
+
    </dependencies>
 
 
