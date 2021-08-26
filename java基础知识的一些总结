@@ -5,6 +5,7 @@ https://blog.csdn.net/qq_29631809/article/details/76168027
 
 
 
+
 2:java基础中数据结构等相关的知识
 HashMap原理的介绍(也是基于java8的)
 https://blog.csdn.net/qq_26323323/article/details/86219905
@@ -12,29 +13,58 @@ https://blog.csdn.net/qq_26323323/article/details/86219905
 java 8的HashMap操作,主要是关于put的操作,有详细的原理
 https://mp.weixin.qq.com/s/3SK251gv5w_Hnxy1oJPzhw
 
+帝都的雁：HashMap1.7源码剖析(面试-----)
+https://blog.csdn.net/yxh13521338301/article/details/105535513
+
+帝都的雁： 头插法会导致hashmap7扩容死循环而尾插法却不会
+https://blog.csdn.net/yxh13521338301/article/details/105629318
+
+帝都的雁： JDK1.8ConcurrentHashMap源码剖析（最后还有总结）
+https://blog.csdn.net/yxh13521338301/article/details/105598561
+
+帝都的雁：源码分析ArrayList、LinkedList和Vector（有详细的分析,并且最后还有总结）
+https://blog.csdn.net/yxh13521338301/article/details/105511053
+
+
+生成订单30分钟未支付，则自动取消，该怎么实现？可使用单机版的延时队列,如果要是分布式情况的话，则需要使用消息中间件
+https://mp.weixin.qq.com/s/-fmKcw2m2eb6NRAmcXfBhw
+
+
+3:多线程相：
+线程池的原理(核心参数,业务流程，监控，调优手段)
+https://mp.weixin.qq.com/s/5LPyBFAHJklRrL2WPWJQxg
 
 
 
+4：设计模式实践
+一种思路：策略模式 + 反射工厂，很好的实现了开闭原则
+https://mp.weixin.qq.com/s/rxiHqUh080U5fGDhn0Q_UQ
 
 
-3:JVM相关的知识
-3.1)JVM的类加载
+
+5:JVM相关的知识
+JVM的类加载
 JVM的类加载以及双亲委派的介绍:
 https://mp.weixin.qq.com/s/7aAu_blw6hrNtF17W0H2ag
 了解双亲委派的机制然后打破双亲委派的介绍:
 https://mp.weixin.qq.com/s/HHBL8VI5Y_ZM20Kje8BIZQ
 
-3.2)JVM的运行数据划分
+JVM的运行数据划分
 JVM主要关于jvm的类的加载，运行时数据划分，class的结构
 https://blog.csdn.net/luanlouis/category_2630089.html
 
-3.3)JVM的java对象的回收以及Java对象在内存中
+JVM的java对象的回收以及Java对象在内存中
 https://caoju.blog.csdn.net/article/details/106583726
 
-3.3)JVM的垃圾回收和垃圾回收算法:
+JVM的垃圾回收和垃圾回收算法:
 JVM的垃圾回收算法
 https://yuanyu.blog.csdn.net/article/details/87624961
 
-3.4)JVM的调优以及相关的问题排查:
+JVM的调优以及相关的问题排查:
 JVM的常见的参数
 https://mp.weixin.qq.com/s/XZFEgf1ZS7gNt7lku3TF4g
+
+
+jvm的实践：
+生产环境设置CMS垃圾回收器,并且设置相应的参数
+https://mp.weixin.qq.com/s/vrIvphlkwnQnDhv9JdhO8g
