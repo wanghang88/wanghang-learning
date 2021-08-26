@@ -95,10 +95,10 @@ public class StreamDemo {
      //   streamDemo.streamOf();
 
 
-     //   streamDemo.listToStr();
+        streamDemo.listToStr();
 
 
-        streamDemo.IntStreamRange();
+      //  streamDemo.IntStreamRange();
 
 
 
@@ -579,7 +579,7 @@ public class StreamDemo {
         String listToStr = String.join(",", list);
         System.out.println("list:"+list+"listToStr:"+listToStr);
 
-        String collectStr = list.stream().collect(Collectors.joining(","));
+        String collectStr = list.stream().collect(Collectors.joining(" "));
         System.out.println("collectStr:"+collectStr);
     }
 
