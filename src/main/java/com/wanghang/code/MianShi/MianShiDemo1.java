@@ -29,6 +29,9 @@ package com.wanghang.code.MianShi;
     java中常见的面试题(CAS原理,java内存模型,java并发多线程,TheadLocal的内存泄漏,java的注解)
     https://blog.csdn.net/guoguo527/category_10514554.html
 
+    java面试题精选
+    https://blog.csdn.net/qq_39390545/category_11105157.html
+
 
     全面介绍JVM的面试题(包括:java的类加载,GC垃圾回收,JVM的内存分配等)
     https://riemann.blog.csdn.net/article/details/115473709
