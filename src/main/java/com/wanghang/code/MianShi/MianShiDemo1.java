@@ -10,6 +10,7 @@ package com.wanghang.code.MianShi;
     https://github.com/irwinai/JavaInterview/blob/main/%E6%9D%A5%E8%87%AA%E6%9C%8B%E5%8F%8B%E6%9C%80%E8%BF%91%E9%98%BF%E9%87%8C%E3%80%81%E8%85%BE%E8%AE%AF%E3%80%81%E7%BE%8E%E5%9B%A2%E7%AD%89P7%E5%B2%97%E4%BD%8D%E9%9D%A2%E8%AF%95%E9%A2%98.md
     https://susan.net.cn/post/9/9004/
     https://blog.csdn.net/wb_snail/article/details/108134550
+    https://mp.weixin.qq.com/s?__biz=MzUyOTg1OTkyMA==&mid=2247484910&idx=1&sn=c686a382915e18bfc7bca152aa8590de&scene=21#wechat_redirect
 
 
 
