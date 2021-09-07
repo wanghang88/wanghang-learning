@@ -64,6 +64,9 @@ JVM的调优以及相关的问题排查:
 JVM的常见的参数
 https://mp.weixin.qq.com/s/XZFEgf1ZS7gNt7lku3TF4g
 
+JVM调优总结 -Xms -Xmx -Xmn -Xss(包括:1堆大小设置,2回收器选择,3辅助信息主要是GC的日志,4常见的配置汇总,以及关于JVM的调优总结)
+https://adong.blog.csdn.net/article/details/84679802
+
 
 jvm的实践：
 生产环境设置CMS垃圾回收器,并且设置相应的参数
