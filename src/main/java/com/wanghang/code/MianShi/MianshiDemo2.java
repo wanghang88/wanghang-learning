@@ -25,6 +25,9 @@ package com.wanghang.code.MianShi;
         线上jvm进程cpu负载不高，但是卡顿，如何解决？
         threadlocal的使用与原理？
 
+   博客：各大厂的面试题,搜集
+        https://adong.blog.csdn.net/article/details/91804971
+
 
 
 
