@@ -71,3 +71,5 @@ https://adong.blog.csdn.net/article/details/84679802
 jvm的实践：
 生产环境设置CMS垃圾回收器,并且设置相应的参数
 https://mp.weixin.qq.com/s/vrIvphlkwnQnDhv9JdhO8g
+美团技术博文(Java中9种常见的CMS GC问题分析与解决)
+https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651754955&idx=1&sn=8411133d2e5f22b9e2c5a34cdc67985d&chksm=bd1248868a65c1900dd1b7203ce17159740253df2324a208ea9c71ee764e1bde1ed2616d77ce&scene=178&cur_album_id=1603714331009974274#rd
