@@ -31,15 +31,21 @@ https://mp.weixin.qq.com/s/-fmKcw2m2eb6NRAmcXfBhw
 
 
 3:多线程相：
+多线程专题：基本上包含多线程的各种场景的问题
+http://mp.weixin.qq.com/mp/homepage?__biz=MzU1NTkwODE4Mw==&hid=4&sn=f1a8cb02890254738b39c6d2def5e472&scene=18#wechat_redirect
+
 线程池的原理(核心参数,业务流程，监控，调优手段)
 https://mp.weixin.qq.com/s/5LPyBFAHJklRrL2WPWJQxg
+面试：Java锁知识大梳理
+https://mp.weixin.qq.com/s/pitfqdY3VJs4TTiX_ngMUA
+面试:多线程知识梳理(1基本概念,2Thread,3线程池,4线程工具类ThreadlLocal,Semaphore,CountDownLatch,CyclicBarrier)
+https://mp.weixin.qq.com/s/Km4-aiWDUDQ4tTU4pXOesA
 
 
 
 4：设计模式实践
 一种思路：策略模式 + 反射工厂，很好的实现了开闭原则
 https://mp.weixin.qq.com/s/rxiHqUh080U5fGDhn0Q_UQ
-
 
 
 5:JVM相关的知识
@@ -60,16 +66,22 @@ JVM的垃圾回收和垃圾回收算法:
 JVM的垃圾回收算法
 https://yuanyu.blog.csdn.net/article/details/87624961
 
-JVM的调优以及相关的问题排查:
-JVM的常见的参数
-https://mp.weixin.qq.com/s/XZFEgf1ZS7gNt7lku3TF4g
+全面介绍JVM
+面试:全面介绍JVM的,主要用来应对面试(1、类加载器,2、对象的创建过程,3、对象的内存布局,4、对象访问,5、JVM 内存区域,6、对象存活判断,7、垃圾回收算法,8、安全点,9、JVM 垃圾回收器)
+https://mp.weixin.qq.com/s/acyOAGlVkhTTnMGLZyFX7A
+整个JVM总结得比较全的:
+https://www.jianshu.com/nb/29039435
+帝都的大雁：解刨的JVM(全面介绍JVM)
+https://mp.weixin.qq.com/s/oz2v3bVXGWeX945H6syoLA
 
-JVM调优总结 -Xms -Xmx -Xmn -Xss(包括:1堆大小设置,2回收器选择,3辅助信息主要是GC的日志,4常见的配置汇总,以及关于JVM的调优总结)
-https://adong.blog.csdn.net/article/details/84679802
 
 
-jvm的实践：
+jvm的实践(JVM调优)：
 生产环境设置CMS垃圾回收器,并且设置相应的参数
 https://mp.weixin.qq.com/s/vrIvphlkwnQnDhv9JdhO8g
 美团技术博文(Java中9种常见的CMS GC问题分析与解决)
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651754955&idx=1&sn=8411133d2e5f22b9e2c5a34cdc67985d&chksm=bd1248868a65c1900dd1b7203ce17159740253df2324a208ea9c71ee764e1bde1ed2616d77ce&scene=178&cur_album_id=1603714331009974274#rd
+JVM调优总结 -Xms -Xmx -Xmn -Xss(包括:1堆大小设置,2回收器选择,3辅助信息主要是GC的日志,4常见的配置汇总,以及关于JVM的调优总结)
+https://adong.blog.csdn.net/article/details/84679802
+JVM的常见的参数
+https://mp.weixin.qq.com/s/XZFEgf1ZS7gNt7lku3TF4g
