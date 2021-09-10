@@ -14,7 +14,7 @@ package com.wanghang.code.MianShi;
 
 
 
- java进阶面试题,包含答案(synchronized,ReentrantLock,Java内存模型,volatile,volatile,线程池,Callable,Atomic原子等,AQS)
+    java进阶面试题,包含答案(synchronized,ReentrantLock,Java内存模型,volatile,volatile,线程池,Callable,Atomic原子等,AQS)
     https://mp.weixin.qq.com/s/cdHfTTvMpH60SwG2bjTMBw
 
     Java高级面试题（包含答案,还不错，主要有：设计模式，Java基础，主流技术，数据库）
@@ -37,8 +37,6 @@ package com.wanghang.code.MianShi;
     https://riemann.blog.csdn.net/article/details/115473709
 
 
-    //todo:面试的软实力(如何突出自己,以及和面试官沟通表达的技巧,到时候面试的时候可以参考下)
-    https://mp.weixin.qq.com/s?__biz=MzI4Njc5NjM1NQ==&mid=2247486163&idx=1&sn=3f395ec8287050ac719d9237eb8107aa&chksm=ebd635ffdca1bce9f444940afeb0d86f6d83bcb2acde382057609225cba6faedf010222d1bfc&scene=21#wechat_redirect
 
     2:面试题搜集无答案，可以参考下
     面试题没有答案,不过可以参考面试题(据说是头条的面试题)
@@ -102,8 +100,18 @@ package com.wanghang.code.MianShi;
     https://github.com/fuzhengwei/CodeGuide#netty-4x-%E4%B8%93%E9%A2%98
 
 
-    面试HR可能会问到的问题
+    8:面试HR可能会问到的问题
     https://blog.csdn.net/chuanchengdabing/article/details/118769749
+    //todo:面试的软实力(如何突出自己,以及和面试官沟通表达的技巧,到时候面试的时候可以参考下)
+    https://mp.weixin.qq.com/s?__biz=MzI4Njc5NjM1NQ==&mid=2247486163&idx=1&sn=3f395ec8287050ac719d9237eb8107aa&chksm=ebd635ffdca1bce9f444940afeb0d86f6d83bcb2acde382057609225cba6faedf010222d1bfc&scene=21#wechat_redirect
+
+
+
+
+
+
+   9:面试我要进大厂(面试专题)
+   https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzkzNTEwOTAxMA==&scene=1&album_id=1512519209967271939&count=3&from=singlemessage#wechat_redirect
 
 
 
