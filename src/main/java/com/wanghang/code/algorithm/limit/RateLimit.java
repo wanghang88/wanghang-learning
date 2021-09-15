@@ -3,7 +3,11 @@ package com.wanghang.code.algorithm.limit;
 
 /**
  *限流算法:
-  参考博文:https://mp.weixin.qq.com/s/XleaesFmDOmEqu7KS--prw
+  参考博文:
+   https://mp.weixin.qq.com/s/XleaesFmDOmEqu7KS--prw
+
+   关于限流算法的分析(包括计数法,滑动窗口算法,漏桶算法,令牌桶,单机限流和分布式限流等的介绍)
+   https://blog.csdn.net/weixin_45505313/article/details/115439059
 
   1)固定窗口限流算法,会有临界值的问题。 比如：一秒钟内限流阀值为5,假如请求在前一秒的0.8-1.2秒内的请求为5个,第二秒内的1-1.2秒内的请求也为5个,
                                        这样的话0.8-1.2s,则并发数高达10个,超过限流的阀值。
