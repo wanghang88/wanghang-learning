@@ -102,6 +102,8 @@ jvm的实践(JVM调优)：
 https://mp.weixin.qq.com/s/vrIvphlkwnQnDhv9JdhO8g
 美团技术博文(Java中9种常见的CMS GC问题分析与解决)
 https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651754955&idx=1&sn=8411133d2e5f22b9e2c5a34cdc67985d&chksm=bd1248868a65c1900dd1b7203ce17159740253df2324a208ea9c71ee764e1bde1ed2616d77ce&scene=178&cur_album_id=1603714331009974274#rd
+美团技术分享：关于java应用的GC调优的分享(看了之后就会对java的GC调优有一个全面的认识)
+https://tech.meituan.com/2017/12/29/jvm-optimize.html
 JVM调优总结 -Xms -Xmx -Xmn -Xss(包括:1堆大小设置,2回收器选择,3辅助信息主要是GC的日志,4常见的配置汇总,以及关于JVM的调优总结)
 https://adong.blog.csdn.net/article/details/84679802
 JVM的常见的参数
