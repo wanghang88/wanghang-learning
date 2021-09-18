@@ -57,6 +57,8 @@ https://blog.csdn.net/xiewenfeng520/category_9122681_2.html
 4：设计模式实践
 一种思路：策略模式 + 反射工厂，很好的实现了开闭原则
 https://mp.weixin.qq.com/s/rxiHqUh080U5fGDhn0Q_UQ
+美团技术关于设计模式的实践，里面包含业务(对于设计模式的分析，重点结合业务分析了工厂模式,策略模式，状态模式，责任链模式的分析)
+https://tech.meituan.com/2020/03/19/design-pattern-practice-in-marketing.html
 
 
 5:JVM相关的知识
