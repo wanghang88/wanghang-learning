@@ -1,21 +1,18 @@
-
 1:一些小知识点容易被忽视的
 java中一些符号转义,可以参考下这篇文章
 https://blog.csdn.net/qq_29631809/article/details/76168027
 
 
-
-
 2:java基础中数据结构等相关的知识
-java并发编程和基础相关的专题(CAS,aqs,Callable 和 Runnable,Future等)
-https://blog.csdn.net/xiewenfeng520/category_9122681_2.html
-
-
 HashMap原理的介绍(也是基于java8的)
 https://blog.csdn.net/qq_26323323/article/details/86219905
 
 java 8的HashMap操作,主要是关于put的操作,有详细的原理
 https://mp.weixin.qq.com/s/3SK251gv5w_Hnxy1oJPzhw
+JDK1.8HashMap的原理分析(主要从:存储结构,索引计算,put方法,扩容机制等全方位地分析HashMap),从面试的角度
+https://tech.meituan.com/2016/06/24/java-hashmap.html
+美团技术的分享:对与JDK1.8HashMap的原理分析;
+https://tech.meituan.com/2016/06/24/java-hashmap.html
 
 帝都的雁：HashMap1.7源码剖析(面试-----)
 https://blog.csdn.net/yxh13521338301/article/details/105535513
@@ -45,9 +42,13 @@ https://mp.weixin.qq.com/s/pitfqdY3VJs4TTiX_ngMUA
 面试:多线程知识梳理(1基本概念,2Thread,3线程池,4线程工具类ThreadlLocal,Semaphore,CountDownLatch,CyclicBarrier)
 https://mp.weixin.qq.com/s/Km4-aiWDUDQ4tTU4pXOesA
 
-
 java多线程之,手写死锁
 https://mp.weixin.qq.com/s/kavJrIc0nsix9ckICO0Ing
+
+
+4:java并发编程
+java并发编程和基础相关的专题(CAS,aqs,Callable 和 Runnable,Future等)
+https://blog.csdn.net/xiewenfeng520/category_9122681_2.html
 
 
 
