@@ -52,6 +52,9 @@ https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html
 java并发编程和基础相关的专题(CAS,aqs,Callable 和 Runnable,Future等)
 https://blog.csdn.net/xiewenfeng520/category_9122681_2.html
 
+美团技术分享：Java中的锁的分析
+https://tech.meituan.com/2018/11/15/java-lock.html
+
 
 
 4：设计模式实践
