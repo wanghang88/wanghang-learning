@@ -28,9 +28,28 @@ package com.wanghang.code.MianShi;
 
 
   2,自己总结：
+       JVM和mysql
        1)关于系统调优？JVM调优？
-       2)说一下hashmap1.7和1.8的数据结构?
-       3)线程池？原理
+       2)垃圾回收器G1和cms？
+       3)mysql的调优？
+
+
+       java基础和并发
+       1)说一下hashmap1.7和1.8的数据结构?
+       2)聊聊CAS和AQS？
+       3)线程池？原理？
+
+
+       Spring
+       SpringBean的生命周期？
+       Spring的IOC和Aop的原理？设置源码？
+       SpringMvc的原理？
+
+       中间件(甚至包括源码):
+
+
+        场景系统设计:
+
 
 
 
