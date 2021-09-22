@@ -52,6 +52,9 @@ https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html
 java并发编程和基础相关的专题(CAS,aqs,Callable 和 Runnable,Future等)
 https://blog.csdn.net/xiewenfeng520/category_9122681_2.html
 
+公众号:java-3y,以对话聊天的方式总结了并发里一些知识(CAS,synchronized,AQS和ReentrantLock,线程池,ThreadLocal,CountDownLatch和CyclicBarrier,java内存模型,深入浅出java内存模型)
+http://javainterview.gitee.io/luffy/2021/08/19/06-Redis/01.%20Redis%E5%9F%BA%E7%A1%80/
+
 美团技术分享：Java中的锁的分析
 https://tech.meituan.com/2018/11/15/java-lock.html
 
