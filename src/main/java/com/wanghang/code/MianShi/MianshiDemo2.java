@@ -36,14 +36,16 @@ package com.wanghang.code.MianShi;
 
 
        java基础和并发
-       1)说一下hashmap1.7和1.8的数据结构?
+       1)说一下hashmap1.7和1.8的区别？说明 1.8 做了哪些优化，如何优化的？
        2)聊聊CAS和AQS？
        3)线程池？原理？
+       4)volatile 的实现原理？
+
 
 
        Spring,springBoot以及springCloud：
        SpringBean的生命周期？
-       Spring的IOC和Aop的原理？设置源码？
+       Spring的IOC和Aop的原理？甚至源码？
        SpringMvc的原理？
        SpringBoot自动装配的原理?
 
@@ -59,6 +61,8 @@ package com.wanghang.code.MianShi;
 
    博客：各大厂的面试题,搜集
         https://adong.blog.csdn.net/article/details/91804971
+
+       https://www.jianshu.com/p/a07d1d4004b0
 
 
 
