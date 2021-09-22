@@ -4,7 +4,7 @@ package com.wanghang.code.MianShi;
 /**
   收集网友面试题总结(都会总结):
 
-  网友1：(红黑树,线程池,hashmap1.7和1.8,threadlocal的使用与原理，redis持久化，分库分表)
+  1,网友总结：(红黑树,线程池,hashmap1.7和1.8,threadlocal的使用与原理，redis持久化，分库分表)
         JAVA中哪些地方用到了红黑树？
         hashmap中的红黑树如果用一种非树状结构的线性结构替换，要用什么比较好？
         tcpip是怎么保证连接的可靠性的？
@@ -24,6 +24,17 @@ package com.wanghang.code.MianShi;
         select. poll. epoll有什么区别，为什么要做这个优化？
         线上jvm进程cpu负载不高，但是卡顿，如何解决？
         threadlocal的使用与原理？
+
+
+
+  2,自己总结：
+       1)关于系统调优？JVM调优？
+       2)说一下hashmap1.7和1.8的数据结构?
+       3)线程池？原理
+
+
+
+
 
    博客：各大厂的面试题,搜集
         https://adong.blog.csdn.net/article/details/91804971

@@ -12,6 +12,9 @@ package com.wanghang.code.MianShi;
     https://blog.csdn.net/wb_snail/article/details/108134550
     https://mp.weixin.qq.com/s?__biz=MzUyOTg1OTkyMA==&mid=2247484910&idx=1&sn=c686a382915e18bfc7bca152aa8590de&scene=21#wechat_redirect
 
+    公众号(java3y)对线面试官,以微信对话的形式来聊一些常见的面试题:
+    https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU4NzA3MTc5Mg==&action=getalbum&album_id=1657204970858872832&scene=126#wechat_redirect
+
 
 
     java进阶面试题,包含答案(synchronized,ReentrantLock,Java内存模型,volatile,volatile,线程池,Callable,Atomic原子等,AQS)
@@ -48,25 +51,13 @@ package com.wanghang.code.MianShi;
     https://mp.weixin.qq.com/s/_sdt1JqIVvO0LD3ckQGp4A
 
    4:围绕系统优化，系统设计，中间件方面的优化
-   a)高并发、高性能、高可用系统设计经验;
-   https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484957&idx=1&sn=e50e0808cb6503ca7214bdd6fee4f134&chksm=ceb9fab6f9ce73a0c0725e381673fc7dc50c0594fb995b5f985b263143b34371e5e2936d7be0&scene=21#wechat_redirect
-   b)高并发系统redis的设计
-   https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484947&idx=1&sn=5a70f88fba83b435b8144bf1ddd3cc9f&chksm=ceb9fab8f9ce73ae97afc43f87314dd3bb61c966b9a40c12801cddc454dcf2845bbb605694e3&scene=21#wechat_redirect
-   c)如何扣减库存的设计:
-   https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484921&idx=1&sn=b429efe7e622759fc8f3bb24c2979a90&chksm=ceb9f952f9ce7044b001528ce8ae0ec89ed63727764081c21a8400e9f8f685345ec9cb0a54d7&scene=21#wechat_redirect
-   d)优惠券的玩法：
-   https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484857&idx=1&sn=21c2986a97b3d49f98f0d7f2c57e1822&source=41#wechat_redirect
    e)如何设计一个高性能的秒杀系统
    https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484869&idx=1&sn=f57664eac0e9e6677d317b6bff959276&chksm=ceb9f96ef9ce7078ff6783500a28afad207d2be53f9d9e0d2e0e44f72145a7562517e3dba897&scene=21#wechat_redirect
    f)聊聊分布式锁
    https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484819&idx=1&sn=d7305a75cf74cd6819343bfd772de21f&chksm=ceb9f938f9ce702ed7515de51856c81f0b8595f822d0c627a930d348cfcaa400e6607d47438b&scene=178&cur_album_id=1874615391855968264#rd
-
    借助SPI 解决复杂业务扩展问题
    https://mp.weixin.qq.com/s?__biz=Mzg2NzYyNjQzNg==&mid=2247484842&idx=1&sn=b2ec39dba9bdc2e92378383c93c62d3d&chksm=ceb9f901f9ce7017c420a89b8ee3a5a998eb2c1b7eccf36a6c0e85906933a43243c1bce4e646&scene=178&cur_album_id=1874615391855968264#rd
 
-   电商设计
-   微关技术公众号->玩转电商(关于电商中使用的一些玩法以及设计方案的总结):
-   https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg2NzYyNjQzNg==&action=getalbum&album_id=1874603714678751240&scene=173&from_msgid=2247484857&from_itemidx=1&count=3&nolastread=1#wechat_redirect
 
 
     5:围绕JVM线上问题的面试的阶梯方案:
