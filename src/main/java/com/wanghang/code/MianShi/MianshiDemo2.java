@@ -38,7 +38,7 @@ package com.wanghang.code.MianShi;
        java基础和并发
        1)说一下hashmap1.7和1.8的区别？说明 1.8 做了哪些优化，如何优化的？
        2)聊聊CAS和AQS？
-       3)线程池？原理？
+       3)多线程,线程池？原理？
        4)volatile 的实现原理？
        5)synchronized的原理？无锁、偏向锁、轻量级锁和重量级锁？
        6)ThreadLocal?
