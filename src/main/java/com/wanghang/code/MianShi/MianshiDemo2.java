@@ -30,8 +30,9 @@ package com.wanghang.code.MianShi;
   2,自己总结：
        JVM和mysql
        1)关于系统调优？JVM调优？
-       2)垃圾回收器G1和cms？
-       3)mysql的调优？
+       2)垃圾回收机制
+       3)垃圾回收器G1和cms？
+       4)mysql的调优？
 
 
        java基础和并发
