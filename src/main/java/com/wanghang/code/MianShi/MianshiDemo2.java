@@ -41,6 +41,8 @@ package com.wanghang.code.MianShi;
        3)线程池？原理？
        4)volatile 的实现原理？
        5)synchronized的原理？无锁、偏向锁、轻量级锁和重量级锁？
+       6)ThreadLocal?
+       7)java的内存模型？
 
 
 
