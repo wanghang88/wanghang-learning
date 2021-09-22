@@ -40,10 +40,11 @@ package com.wanghang.code.MianShi;
        3)线程池？原理？
 
 
-       Spring
+       Spring,springBoot以及springCloud：
        SpringBean的生命周期？
        Spring的IOC和Aop的原理？设置源码？
        SpringMvc的原理？
+       SpringBoot自动装配的原理?
 
        中间件(甚至包括源码):
 
