@@ -33,6 +33,7 @@ package com.wanghang.code.MianShi;
        2)垃圾回收机制
        3)垃圾回收器G1和cms？
        4)mysql的调优？
+       5)mysql数据库怎么保证高可用？
 
 
        java基础和并发
@@ -52,10 +53,19 @@ package com.wanghang.code.MianShi;
        SpringMvc的原理？
        SpringBoot自动装配的原理?
 
-       中间件(甚至包括源码):
+        中间件(甚至包括源码):
 
 
         场景系统设计:
+       十大经典场景面试题(
+        1. 用到分布式事务嘛?为什么用这种方案,有其他方案嘛?
+        2. https原理，工作流程?
+        3.讲一讲7层网络模型，tcp的为什么要三次握手?
+        4.说说线程池的工作原理?
+        5.你们数据库的高可用是怎么实现的?
+        6.如何设计一个秒杀系统？
+        )
+       https://mp.weixin.qq.com/s/6A2MflXj2H47xwj3O0HQ0w
 
 
 
