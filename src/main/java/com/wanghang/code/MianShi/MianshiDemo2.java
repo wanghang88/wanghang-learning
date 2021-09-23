@@ -78,7 +78,7 @@ package com.wanghang.code.MianShi;
         
         https://www.jianshu.com/p/a07d1d4004b0
 
-        可以参考里面的面试题(以及面试考察的内容):
+        可以参考里面的面试题(以及面试考察的内容):也可以当作自己需要学习技术的标准
         https://blog.csdn.net/qq_42986622/article/details/120417959?utm_medium=distribute.pc_relevant_t0.588689&depth_1-utm_source=distribute.pc_relevant_t0.588689
 
 
