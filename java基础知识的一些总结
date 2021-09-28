@@ -96,6 +96,9 @@ https://mp.weixin.qq.com/s/oz2v3bVXGWeX945H6syoLA
 谢文锋博客:对JVM几大方面有全面的介绍并且有代码相应的验证(面试汇总,运行时数据区，对象创建访问内存布局，内存回收原理，内存分配与回收策略，回收算法，回收器，监控命令工具，双亲委派等)
 https://blog.csdn.net/xiewenfeng520/category_9283231.html
 
+JVM配置日志,通过观看日志定位问题
+https://mp.weixin.qq.com/s?__biz=MzI3ODA0ODkwNA==&mid=2247484338&idx=1&sn=54c218491536e31cd2f5d8fd0f5a0ed2&chksm=eb5dba55dc2a33437d307cbc07abcda6e974fbc7d85709fce603af346922b8eb2f2b03b04275&scene=178&cur_album_id=1674636193726054407#rd
+
 
 
 
@@ -111,3 +114,5 @@ JVM调优总结 -Xms -Xmx -Xmn -Xss(包括:1堆大小设置,2回收器选择,3�
 https://adong.blog.csdn.net/article/details/84679802
 JVM的常见的参数
 https://mp.weixin.qq.com/s/XZFEgf1ZS7gNt7lku3TF4g
+线上Full GC问题排查思路
+https://mp.weixin.qq.com/s?__biz=MzI3ODA0ODkwNA==&mid=2247484401&idx=1&sn=6d9eb737315a39a728f93f26bbc7efac&chksm=eb5dba16dc2a3300a42f78a15e2375b42f673830dcfc683706b5e065c8303e03ec3d201da484&scene=178&cur_album_id=1674636193726054407#rd
